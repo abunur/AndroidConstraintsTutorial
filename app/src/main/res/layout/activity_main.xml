@@ -1,192 +1,217 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical"
-  >
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context=".MainActivity"
+  tools:layout_editor_absoluteY="81dp">
 
 
+  <TextView
+    android:id="@+id/textView12"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/space_stations"
+    tools:layout_editor_absoluteX="7dp"
+    tools:layout_editor_absoluteY="53dp" />
 
-  <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="100px"
-    android:orientation="horizontal">
+  <ImageView
+    android:id="@+id/imageView2"
+    android:layout_width="41dp"
+    android:layout_height="33dp"
+    android:contentDescription="@string/todo"
+    app:srcCompat="@mipmap/spaceStationIcon"
+    tools:layout_editor_absoluteX="16dp"
+    tools:layout_editor_absoluteY="16dp" />
 
-    <TextView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="@string/space_stations"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintLeft_toLeftOf="parent"
-      app:layout_constraintRight_toRightOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
-    <ImageView
-      android:id="@+id/imageView2"
-      android:layout_width="91dp"
-      android:layout_height="25dp"
-      android:layout_weight="1"
-      app:srcCompat="@mipmap/spaceStationIcon"
-      android:contentDescription="@string/todo" />
-    <TextView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="@string/flights"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintLeft_toLeftOf="parent"
-      app:layout_constraintRight_toRightOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
+  <TextView
+    android:id="@+id/textView13"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/flights"
+    tools:layout_editor_absoluteX="172dp"
+    tools:layout_editor_absoluteY="53dp" />
 
-    <ImageView
-      android:id="@+id/imageView3"
-      android:layout_width="31dp"
-      android:layout_height="33dp"
-      android:layout_weight="1"
-      app:srcCompat="@mipmap/rocketIcon"
-      android:contentDescription="@string/todo" />
-    <TextView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="@string/rovers"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintLeft_toLeftOf="parent"
-      app:layout_constraintRight_toRightOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
+  <ImageView
+    android:id="@+id/imageView3"
+    android:layout_width="40dp"
+    android:layout_height="35dp"
+    android:contentDescription="@string/todo"
+    app:srcCompat="@mipmap/rocketIcon"
+    tools:layout_editor_absoluteX="172dp"
+    tools:layout_editor_absoluteY="11dp" />
 
-    <ImageView
-      android:id="@+id/imageView4"
-      android:layout_width="35dp"
-      android:layout_height="29dp"
-      android:layout_weight="1"
-      app:srcCompat="@mipmap/roverIcon"
-      android:contentDescription="@string/todo" />
-  </LinearLayout>
+  <TextView
+    android:id="@+id/textView14"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/rovers"
+    tools:layout_editor_absoluteX="325dp"
+    tools:layout_editor_absoluteY="53dp" />
 
-  <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="100px"
-    android:orientation="horizontal">
-    <TextView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="@string/round_trip"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintLeft_toLeftOf="parent"
-      app:layout_constraintRight_toRightOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
-    <Switch
-      android:id="@+id/switch1"
-      android:layout_width="0dp"
-      android:layout_height="wrap_content"
-      android:layout_weight="1"
-      android:text="@string/roundTripSwitch" />
-
-  </LinearLayout>
-  <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="100px"
-    android:orientation="horizontal">
-
-    <TextView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="DCA"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintLeft_toLeftOf="parent"
-      app:layout_constraintRight_toRightOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-      android:id="@+id/imageView6"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_weight="1"
-      app:srcCompat="@mipmap/double_arrows" />
-
-    <TextView
-      android:id="@+id/textView2"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_weight="1"
-      android:text="MARS" />
-  </LinearLayout>
-  <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="100px"
-    android:orientation="horizontal">
-
-    <TextView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="Sept 14 - 17"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintLeft_toLeftOf="parent"
-      app:layout_constraintRight_toRightOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-      android:id="@+id/textView3"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_weight="1"
-      android:text="1 Traveller" />
-  </LinearLayout>
-  <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="100px"
-    android:orientation="horizontal">
-
-    <ImageView
-      android:id="@+id/imageView5"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_weight="1"
-      app:srcCompat="@mipmap/singleArrow" />
-  </LinearLayout>
-  <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="100px"
-    android:orientation="horizontal">
-
-    <ImageView
-      android:id="@+id/imageView7"
-      android:layout_width="wrap_content"
-      android:layout_height="33dp"
-      android:layout_weight="1"
-      app:srcCompat="@mipmap/trackIcon" />
-    <TextView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="Track the staus of a Journey"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintLeft_toLeftOf="parent"
-      app:layout_constraintRight_toRightOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
+  <ImageView
+    android:id="@+id/imageView4"
+    android:layout_width="38dp"
+    android:layout_height="36dp"
+    android:contentDescription="@string/todo"
+    app:srcCompat="@mipmap/roverIcon"
+    tools:layout_editor_absoluteX="325dp"
+    tools:layout_editor_absoluteY="16dp" />
 
 
-  </LinearLayout>
-  <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="100px"
-    android:orientation="horizontal">
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/round_trip"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintHorizontal_bias="0.354"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.205" />
 
-    <ImageView
-      android:id="@+id/imageView9"
-      android:layout_height="wrap_content"
-      android:layout_weight="1"
-      app:srcCompat="@mipmap/galaxy" />
+  <Switch
+    android:id="@+id/switch1"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="@string/roundTripSwitch"
+    tools:layout_editor_absoluteX="223dp"
+    tools:layout_editor_absoluteY="93dp" />
 
-    <TextView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="Explore the Universe"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintLeft_toLeftOf="parent"
-      app:layout_constraintRight_toRightOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
-  </LinearLayout>
+  <ImageView
+    android:id="@+id/imageView10"
+    android:layout_width="124dp"
+    android:layout_height="98dp"
+    app:srcCompat="#eb1c1c"
+    tools:layout_editor_absoluteX="201dp"
+    tools:layout_editor_absoluteY="144dp" />
+
+  <ImageView
+    android:id="@+id/imageView10"
+    android:layout_width="124dp"
+    android:layout_height="98dp"
+    app:srcCompat="#eb1c1c"
+    tools:layout_editor_absoluteX="57dp"
+    tools:layout_editor_absoluteY="144dp" />
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="DCA"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintHorizontal_bias="0.282"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.31" />
+
+  <ImageView
+    android:id="@+id/imageView6"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    app:srcCompat="@mipmap/double_arrows"
+    tools:layout_editor_absoluteX="166dp"
+    tools:layout_editor_absoluteY="161dp" />
+
+  <TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="MARS"
+    tools:layout_editor_absoluteX="246dp"
+    tools:layout_editor_absoluteY="153dp" />
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Sept 14 - 17"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintHorizontal_bias="0.24"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.52" />
+
+  <TextView
+    android:id="@+id/textView3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="1 Traveller"
+    tools:layout_editor_absoluteX="232dp"
+    tools:layout_editor_absoluteY="256dp" />
+
+  <ImageView
+    android:id="@+id/imageView5"
+    android:layout_width="93dp"
+    android:layout_height="79dp"
+    android:layout_weight="1"
+    app:srcCompat="@mipmap/singleArrow"
+    tools:layout_editor_absoluteX="146dp"
+    tools:layout_editor_absoluteY="275dp" />
 
 
-</LinearLayout>
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Track the staus of a Journey"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintHorizontal_bias="0.65"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.77" />
+
+  <ImageView
+    android:id="@+id/imageView9"
+    android:layout_width="55dp"
+    android:layout_height="46dp"
+    android:layout_weight="1"
+    app:srcCompat="@mipmap/galaxy"
+    tools:layout_editor_absoluteX="32dp"
+    tools:layout_editor_absoluteY="434dp" />
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Explore the Universe"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintHorizontal_bias="0.57"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.902" />
+
+
+  <TextView
+    android:id="@+id/textView15"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Washington, D.C."
+    tools:layout_editor_absoluteX="57dp"
+    tools:layout_editor_absoluteY="180dp" />
+
+  <TextView
+    android:id="@+id/textView16"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Mars Colony 2"
+    tools:layout_editor_absoluteX="223dp"
+    tools:layout_editor_absoluteY="180dp" />
+
+  <ImageView
+    android:id="@+id/imageView7"
+    android:layout_width="89dp"
+    android:layout_height="50dp"
+    android:layout_weight="1"
+    app:srcCompat="@mipmap/trackIcon"
+    tools:layout_editor_absoluteX="16dp"
+    tools:layout_editor_absoluteY="364dp" />
+
+
+</android.support.constraint.ConstraintLayout>
