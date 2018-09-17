@@ -17,6 +17,7 @@
     tools:layout_editor_absoluteX="33dp"
     tools:layout_editor_absoluteY="58dp" />
 
+
   <ImageView
     android:id="@+id/imageView2"
     android:layout_width="41dp"
@@ -86,13 +87,15 @@
     tools:layout_editor_absoluteX="201dp"
     tools:layout_editor_absoluteY="144dp" />
 
-  <ImageView
-    android:id="@+id/imageView10"
+
+  <view
+    android:id="@+id/backgroundViewLeft"
     android:layout_width="124dp"
     android:layout_height="98dp"
-    app:srcCompat="#eb1c1c"
+    android:backgroundTint="#f00"
     tools:layout_editor_absoluteX="57dp"
-    tools:layout_editor_absoluteY="144dp" />
+    tools:layout_editor_absoluteY="144dp"
+    />
 
   <TextView
     android:layout_width="wrap_content"
