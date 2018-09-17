@@ -22,7 +22,7 @@
     android:layout_width="41dp"
     android:layout_height="33dp"
     android:contentDescription="@string/todo"
-    app:srcCompat="@mipmap/spaceStationIcon"
+    app:srcCompat="@mipmap/space_station_icon"
     tools:layout_editor_absoluteX="60dp"
     tools:layout_editor_absoluteY="16dp" />
 
@@ -39,7 +39,7 @@
     android:layout_width="40dp"
     android:layout_height="35dp"
     android:contentDescription="@string/todo"
-    app:srcCompat="@mipmap/rocketIcon"
+    app:srcCompat="@mipmap/rocket_icon"
     tools:layout_editor_absoluteX="172dp"
     tools:layout_editor_absoluteY="16dp" />
 
@@ -56,7 +56,7 @@
     android:layout_width="38dp"
     android:layout_height="36dp"
     android:contentDescription="@string/todo"
-    app:srcCompat="@mipmap/roverIcon"
+    app:srcCompat="@mipmap/rover_icon"
     tools:layout_editor_absoluteX="274dp"
     tools:layout_editor_absoluteY="16dp" />
 
