@@ -114,7 +114,6 @@
     app:layout_constraintTop_toBottomOf="@+id/roundTripLabel"
 
     tools:layout_editor_absoluteY="121dp"
-    
     />
 
 
