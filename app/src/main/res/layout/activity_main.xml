@@ -152,14 +152,17 @@
     android:id="@+id/doubleArrowsImage"
     android:layout_width="75dp"
     android:layout_height="75dp"
-    android:layout_marginTop="15dp"
     android:layout_weight="1"
     android:scaleType="fitCenter"
     android:src="@drawable/double_arrows"
+
     app:layout_constraintBottom_toBottomOf="@+id/backgroundViewLeft"
+    app:layout_constraintTop_toTopOf="@+id/backgroundViewLeft"
+
     app:layout_constraintEnd_toEndOf="@+id/singleArrowImage"
     app:layout_constraintStart_toStartOf="@+id/singleArrowImage"
-    app:layout_constraintTop_toTopOf="@+id/backgroundViewLeft" />
+
+     />
 
   <TextView
     android:id="@+id/textView2"
