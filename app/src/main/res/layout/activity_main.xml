@@ -80,21 +80,21 @@
     tools:layout_editor_absoluteY="93dp" />
 
 
-  <view
+  <View
     android:id="@+id/backgroundViewRight"
     android:layout_width="124dp"
     android:layout_height="98dp"
-    android:backgroundTint="#f00"
+    android:background="#f00"
     tools:layout_editor_absoluteX="201dp"
     tools:layout_editor_absoluteY="144dp"
     />
 
 
-  <view
+  <View
     android:id="@+id/backgroundViewLeft"
     android:layout_width="124dp"
     android:layout_height="98dp"
-    android:backgroundTint="#f00"
+    android:background="#f00"
     tools:layout_editor_absoluteX="57dp"
     tools:layout_editor_absoluteY="144dp"
     />
