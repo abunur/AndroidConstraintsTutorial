@@ -13,9 +13,12 @@
     android:id="@+id/textView12"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
     android:text="@string/space_stations"
     app:layout_constraintBaseline_toBaselineOf="@+id/flightsText"
-    tools:layout_editor_absoluteX="33dp" />
+    app:layout_constraintEnd_toStartOf="@+id/flightsText"
+    app:layout_constraintStart_toStartOf="parent" />
 
 
   <ImageView
@@ -50,17 +53,22 @@
     android:contentDescription="Flights"
     app:layout_constraintBottom_toBottomOf="@+id/imageView2"
     app:layout_constraintEnd_toEndOf="@+id/flightsText"
+    app:layout_constraintHorizontal_bias="0.538"
     app:layout_constraintStart_toStartOf="@+id/flightsText"
     app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="1.0"
     app:srcCompat="@mipmap/rocket_icon" />
 
   <TextView
     android:id="@+id/textView14"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
     android:text="@string/rovers"
     app:layout_constraintBaseline_toBaselineOf="@+id/flightsText"
-    tools:layout_editor_absoluteX="274dp" />
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/flightsText" />
 
   <ImageView
     android:id="@+id/imageView4"
@@ -79,40 +87,53 @@
     android:id="@+id/roundTripLabel"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
     android:layout_marginTop="8dp"
+
     android:text="@string/round_trip"
+
     app:layout_constraintBottom_toBottomOf="@+id/switch1"
-    app:layout_constraintEnd_toEndOf="@+id/imageView6"
-    app:layout_constraintStart_toStartOf="@+id/imageView6"
-    app:layout_constraintTop_toBottomOf="@+id/rocketIcon" />
+    app:layout_constraintTop_toTopOf="@+id/switch1"
+
+    app:layout_constraintEnd_toEndOf="@+id/doubleArrowsImage"
+    app:layout_constraintStart_toStartOf="@+id/doubleArrowsImage"
+
+    app:layout_constraintVertical_bias="1.0" />
 
   <Switch
     android:id="@+id/switch1"
     android:layout_width="0dp"
     android:layout_height="wrap_content"
-    android:layout_marginStart="44dp"
-    android:layout_weight="1"
-    android:text="@string/roundTripSwitch"
+
     app:layout_constraintStart_toEndOf="@+id/roundTripLabel"
-    tools:layout_editor_absoluteY="98dp" />
+
+    tools:layout_editor_absoluteY="121dp" />
 
 
   <View
     android:id="@+id/backgroundViewRight"
     android:layout_width="124dp"
     android:layout_height="98dp"
+    android:layout_marginStart="16dp"
     android:background="#f00"
-    tools:layout_editor_absoluteX="203dp"
-    tools:layout_editor_absoluteY="144dp" />
+    app:layout_constraintBottom_toBottomOf="@+id/backgroundViewLeft"
+
+
+    app:layout_constraintStart_toStartOf="@+id/guideline3"
+    app:layout_constraintTop_toTopOf="@+id/backgroundViewLeft"
+    app:layout_constraintVertical_bias="0.644" />
 
 
   <View
     android:id="@+id/backgroundViewLeft"
     android:layout_width="124dp"
     android:layout_height="98dp"
+    android:layout_marginEnd="16dp"
+
     android:background="#f00"
-    tools:layout_editor_absoluteX="51dp"
-    tools:layout_editor_absoluteY="144dp" />
+
+    app:layout_constraintEnd_toStartOf="@+id/guideline3"
+    app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
   <TextView
     android:id="@+id/textView6"
@@ -125,14 +146,16 @@
     app:layout_constraintTop_toTopOf="@+id/backgroundViewLeft" />
 
   <ImageView
-    android:id="@+id/imageView6"
+    android:id="@+id/doubleArrowsImage"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
     android:layout_weight="1"
-    app:layout_constraintEnd_toEndOf="@+id/imageView5"
-    app:layout_constraintStart_toStartOf="@+id/imageView5"
-    app:srcCompat="@mipmap/double_arrows"
-    tools:layout_editor_absoluteY="161dp" />
+    app:layout_constraintBottom_toBottomOf="@+id/backgroundViewLeft"
+    app:layout_constraintEnd_toEndOf="@+id/singleArrowImage"
+    app:layout_constraintStart_toStartOf="@+id/singleArrowImage"
+    app:layout_constraintTop_toTopOf="@+id/backgroundViewLeft"
+    app:srcCompat="@mipmap/double_arrows" />
 
   <TextView
     android:id="@+id/textView2"
@@ -166,7 +189,7 @@
     app:layout_constraintStart_toStartOf="@+id/destinationCityLabel" />
 
   <ImageView
-    android:id="@+id/imageView5"
+    android:id="@+id/singleArrowImage"
     android:layout_width="93dp"
     android:layout_height="79dp"
     android:layout_weight="1"
@@ -186,7 +209,7 @@
     android:text="Track the staus of a Journey"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+    app:layout_constraintTop_toBottomOf="@+id/singleArrowImage" />
 
   <ImageView
     android:id="@+id/universeIcon"
@@ -194,7 +217,7 @@
     android:layout_height="46dp"
     android:layout_marginEnd="8dp"
     android:layout_weight="1"
-    android:scaleType="centerCrop"
+    android:scaleType="fitCenter"
     app:layout_constraintBottom_toBottomOf="@+id/exploreLabel"
     app:layout_constraintEnd_toStartOf="@+id/exploreLabel"
     app:layout_constraintTop_toTopOf="@+id/exploreLabel"
@@ -254,6 +277,20 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     app:layout_constraintGuide_begin="255dp" />
+
+  <android.support.constraint.Guideline
+    android:id="@+id/guideline2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_end="442dp" />
+
+  <android.support.constraint.Guideline
+    android:id="@+id/guideline3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintGuide_percent="0.50121653" />
 
 
 </android.support.constraint.ConstraintLayout>
