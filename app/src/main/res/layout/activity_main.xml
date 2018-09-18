@@ -95,12 +95,12 @@
 
     android:text="@string/round_trip"
 
-    app:layout_constraintBottom_toBottomOf="@+id/switch1"
-    app:layout_constraintTop_toTopOf="@+id/switch1"
+    app:layout_constraintBottom_toTopOf="@+id/guideline2"
+    app:layout_constraintTop_toBottomOf="@+id/flightsText"
 
     app:layout_constraintEnd_toEndOf="@+id/doubleArrowsImage"
-    app:layout_constraintStart_toStartOf="@+id/doubleArrowsImage"
 
+    app:layout_constraintStart_toStartOf="@+id/doubleArrowsImage"
     app:layout_constraintVertical_bias="1.0" />
 
   <Switch
@@ -110,7 +110,12 @@
 
     app:layout_constraintStart_toEndOf="@+id/roundTripLabel"
 
-    tools:layout_editor_absoluteY="121dp" />
+    app:layout_constraintBottom_toTopOf="@+id/roundTripLabel"
+    app:layout_constraintTop_toBottomOf="@+id/roundTripLabel"
+
+    tools:layout_editor_absoluteY="121dp"
+    
+    />
 
 
   <View
