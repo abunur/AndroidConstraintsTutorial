@@ -79,13 +79,15 @@
     tools:layout_editor_absoluteX="188dp"
     tools:layout_editor_absoluteY="93dp" />
 
-  <ImageView
-    android:id="@+id/imageView10"
+
+  <view
+    android:id="@+id/backgroundViewRight"
     android:layout_width="124dp"
     android:layout_height="98dp"
-    app:srcCompat="#eb1c1c"
+    android:backgroundTint="#f00"
     tools:layout_editor_absoluteX="201dp"
-    tools:layout_editor_absoluteY="144dp" />
+    tools:layout_editor_absoluteY="144dp"
+    />
 
 
   <view
