@@ -14,70 +14,87 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="@string/space_stations"
-    tools:layout_editor_absoluteX="33dp"
-    tools:layout_editor_absoluteY="58dp" />
+    app:layout_constraintBaseline_toBaselineOf="@+id/flightsText"
+    tools:layout_editor_absoluteX="33dp" />
 
 
   <ImageView
     android:id="@+id/imageView2"
     android:layout_width="41dp"
     android:layout_height="33dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
     android:contentDescription="Space Stations"
+    app:layout_constraintEnd_toEndOf="@+id/textView12"
+    app:layout_constraintStart_toStartOf="@+id/textView12"
     app:srcCompat="@mipmap/space_station_icon"
-    tools:layout_editor_absoluteX="60dp"
-    tools:layout_editor_absoluteY="16dp" />
+    tools:layout_editor_absoluteY="14dp" />
 
   <TextView
-    android:id="@+id/textView13"
+    android:id="@+id/flightsText"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
     android:text="@string/flights"
-    tools:layout_editor_absoluteX="172dp"
-    tools:layout_editor_absoluteY="58dp" />
+    app:layout_constraintEnd_toEndOf="@+id/roundTripLabel"
+    app:layout_constraintStart_toStartOf="@+id/roundTripLabel"
+    app:layout_constraintTop_toBottomOf="@+id/rocketIcon" />
 
   <ImageView
-    android:id="@+id/imageView3"
+    android:id="@+id/rocketIcon"
     android:layout_width="40dp"
     android:layout_height="35dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
     android:contentDescription="Flights"
-    app:srcCompat="@mipmap/rocket_icon"
-    tools:layout_editor_absoluteX="172dp"
-    tools:layout_editor_absoluteY="16dp" />
+    app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+    app:layout_constraintEnd_toEndOf="@+id/flightsText"
+    app:layout_constraintStart_toStartOf="@+id/flightsText"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@mipmap/rocket_icon" />
 
   <TextView
     android:id="@+id/textView14"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="@string/rovers"
-    tools:layout_editor_absoluteX="274dp"
-    tools:layout_editor_absoluteY="58dp" />
+    app:layout_constraintBaseline_toBaselineOf="@+id/flightsText"
+    tools:layout_editor_absoluteX="274dp" />
 
   <ImageView
     android:id="@+id/imageView4"
     android:layout_width="38dp"
     android:layout_height="36dp"
+    android:layout_marginStart="8dp"
     android:contentDescription="Rovers"
-    app:srcCompat="@mipmap/rover_icon"
-    tools:layout_editor_absoluteX="274dp"
-    tools:layout_editor_absoluteY="16dp" />
+    app:layout_constraintBottom_toBottomOf="@+id/rocketIcon"
+    app:layout_constraintEnd_toEndOf="@+id/textView14"
+    app:layout_constraintStart_toStartOf="@+id/textView14"
+    app:layout_constraintTop_toTopOf="@+id/rocketIcon"
+    app:srcCompat="@mipmap/rover_icon" />
 
 
   <TextView
-    android:id="@+id/textView17"
+    android:id="@+id/roundTripLabel"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
     android:text="@string/round_trip"
-    tools:layout_editor_absoluteX="112dp"
-    tools:layout_editor_absoluteY="101dp" />
+    app:layout_constraintBottom_toBottomOf="@+id/switch1"
+    app:layout_constraintEnd_toEndOf="@+id/imageView6"
+    app:layout_constraintStart_toStartOf="@+id/imageView6"
+    app:layout_constraintTop_toBottomOf="@+id/rocketIcon" />
 
   <Switch
     android:id="@+id/switch1"
     android:layout_width="0dp"
     android:layout_height="wrap_content"
+    android:layout_marginStart="44dp"
     android:layout_weight="1"
     android:text="@string/roundTripSwitch"
-    tools:layout_editor_absoluteX="188dp"
-    tools:layout_editor_absoluteY="93dp" />
+    app:layout_constraintStart_toEndOf="@+id/roundTripLabel"
+    tools:layout_editor_absoluteY="98dp" />
 
 
   <View
@@ -85,9 +102,8 @@
     android:layout_width="124dp"
     android:layout_height="98dp"
     android:background="#f00"
-    tools:layout_editor_absoluteX="201dp"
-    tools:layout_editor_absoluteY="144dp"
-    />
+    tools:layout_editor_absoluteX="203dp"
+    tools:layout_editor_absoluteY="144dp" />
 
 
   <View
@@ -95,24 +111,27 @@
     android:layout_width="124dp"
     android:layout_height="98dp"
     android:background="#f00"
-    tools:layout_editor_absoluteX="57dp"
-    tools:layout_editor_absoluteY="144dp"
-    />
+    tools:layout_editor_absoluteX="51dp"
+    tools:layout_editor_absoluteY="144dp" />
 
   <TextView
+    android:id="@+id/textView6"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
     android:text="DCA"
-    tools:layout_editor_absoluteX="101dp"
-    tools:layout_editor_absoluteY="153dp" />
+    app:layout_constraintEnd_toEndOf="@+id/backgroundViewLeft"
+    app:layout_constraintStart_toStartOf="@+id/backgroundViewLeft"
+    app:layout_constraintTop_toTopOf="@+id/backgroundViewLeft" />
 
   <ImageView
     android:id="@+id/imageView6"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_weight="1"
+    app:layout_constraintEnd_toEndOf="@+id/imageView5"
+    app:layout_constraintStart_toStartOf="@+id/imageView5"
     app:srcCompat="@mipmap/double_arrows"
-    tools:layout_editor_absoluteX="166dp"
     tools:layout_editor_absoluteY="161dp" />
 
   <TextView
@@ -121,15 +140,20 @@
     android:layout_height="wrap_content"
     android:layout_weight="1"
     android:text="MARS"
-    tools:layout_editor_absoluteX="246dp"
-    tools:layout_editor_absoluteY="153dp" />
+    app:layout_constraintBaseline_toBaselineOf="@+id/textView6"
+    app:layout_constraintEnd_toEndOf="@+id/backgroundViewRight"
+    app:layout_constraintStart_toStartOf="@+id/backgroundViewRight" />
 
   <TextView
+    android:id="@+id/textView7"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
     android:text="Sept 14 - 17"
-    tools:layout_editor_absoluteX="74dp"
-    tools:layout_editor_absoluteY="256dp" />
+    app:layout_constraintEnd_toEndOf="@+id/originCityLabel"
+    app:layout_constraintHorizontal_bias="0"
+    app:layout_constraintStart_toStartOf="@+id/originCityLabel"
+    app:layout_constraintTop_toTopOf="@+id/guideline" />
 
   <TextView
     android:id="@+id/textView3"
@@ -137,67 +161,99 @@
     android:layout_height="wrap_content"
     android:layout_weight="1"
     android:text="1 Traveller"
-    tools:layout_editor_absoluteX="232dp"
-    tools:layout_editor_absoluteY="256dp" />
+    app:layout_constraintBaseline_toBaselineOf="@+id/textView7"
+    app:layout_constraintEnd_toEndOf="@+id/destinationCityLabel"
+    app:layout_constraintStart_toStartOf="@+id/destinationCityLabel" />
 
   <ImageView
     android:id="@+id/imageView5"
     android:layout_width="93dp"
     android:layout_height="79dp"
     android:layout_weight="1"
-    app:srcCompat="@mipmap/single_arrow"
-    tools:layout_editor_absoluteX="146dp"
-    tools:layout_editor_absoluteY="275dp" />
+    app:layout_constraintEnd_toEndOf="@+id/trackLabel"
+    app:layout_constraintStart_toStartOf="@+id/trackLabel"
+    app:layout_constraintTop_toBottomOf="@+id/textView7"
+    app:srcCompat="@mipmap/single_arrow" />
 
 
   <TextView
+    android:id="@+id/trackLabel"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="12dp"
     android:text="Track the staus of a Journey"
-    tools:layout_editor_absoluteX="134dp"
-    tools:layout_editor_absoluteY="379dp" />
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
   <ImageView
-    android:id="@+id/imageView9"
+    android:id="@+id/universeIcon"
     android:layout_width="55dp"
     android:layout_height="46dp"
+    android:layout_marginEnd="8dp"
     android:layout_weight="1"
-    app:srcCompat="@mipmap/galaxy"
-    tools:layout_editor_absoluteX="32dp"
-    tools:layout_editor_absoluteY="434dp" />
+    android:scaleType="centerCrop"
+    app:layout_constraintBottom_toBottomOf="@+id/exploreLabel"
+    app:layout_constraintEnd_toStartOf="@+id/exploreLabel"
+    app:layout_constraintTop_toTopOf="@+id/exploreLabel"
+    app:srcCompat="@mipmap/galaxy" />
 
   <TextView
+    android:id="@+id/exploreLabel"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="40dp"
     android:text="Explore the Universe"
-    tools:layout_editor_absoluteX="146dp"
-    tools:layout_editor_absoluteY="444dp" />
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/trackLabel" />
 
 
   <TextView
-    android:id="@+id/textView15"
+    android:id="@+id/originCityLabel"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="8dp"
     android:text="Washington, D.C."
-    tools:layout_editor_absoluteX="57dp"
-    tools:layout_editor_absoluteY="180dp" />
+    app:layout_constraintBottom_toBottomOf="@+id/backgroundViewLeft"
+    app:layout_constraintEnd_toEndOf="@+id/textView6"
+    app:layout_constraintStart_toStartOf="@+id/textView6"
+    app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
   <TextView
-    android:id="@+id/textView16"
+    android:id="@+id/destinationCityLabel"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Mars Colony 2"
-    tools:layout_editor_absoluteX="223dp"
-    tools:layout_editor_absoluteY="180dp" />
+    android:text="Mars Colony"
+    app:layout_constraintBaseline_toBaselineOf="@+id/originCityLabel"
+    app:layout_constraintEnd_toEndOf="@+id/textView2"
+    app:layout_constraintStart_toStartOf="@+id/textView2" />
 
   <ImageView
-    android:id="@+id/imageView7"
+    android:id="@+id/trackIcon"
     android:layout_width="89dp"
     android:layout_height="50dp"
+    android:layout_marginEnd="8dp"
     android:layout_weight="1"
-    app:srcCompat="@mipmap/track_icon"
-    tools:layout_editor_absoluteX="16dp"
-    tools:layout_editor_absoluteY="364dp" />
+    android:scaleType="fitCenter"
+    app:layout_constraintBottom_toBottomOf="@+id/trackLabel"
+    app:layout_constraintEnd_toStartOf="@+id/trackLabel"
+    app:layout_constraintTop_toTopOf="@+id/trackLabel"
+    app:srcCompat="@mipmap/track_icon" />
+
+  <android.support.constraint.Guideline
+    android:id="@+id/guideline"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_begin="255dp" />
 
 
 </android.support.constraint.ConstraintLayout>
