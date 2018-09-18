@@ -28,9 +28,10 @@
     android:layout_marginEnd="8dp"
     android:layout_marginStart="8dp"
     android:contentDescription="Space Stations"
+    android:scaleType="fitCenter"
+    android:src="@drawable/space_station_icon"
     app:layout_constraintEnd_toEndOf="@+id/textView12"
     app:layout_constraintStart_toStartOf="@+id/textView12"
-    app:srcCompat="@mipmap/space_station_icon"
     tools:layout_editor_absoluteY="14dp" />
 
   <TextView
@@ -51,13 +52,14 @@
     android:layout_marginStart="8dp"
     android:layout_marginTop="8dp"
     android:contentDescription="Flights"
+    android:scaleType="fitCenter"
+    android:src="@drawable/rocket_icon"
     app:layout_constraintBottom_toBottomOf="@+id/imageView2"
     app:layout_constraintEnd_toEndOf="@+id/flightsText"
     app:layout_constraintHorizontal_bias="0.538"
     app:layout_constraintStart_toStartOf="@+id/flightsText"
     app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="1.0"
-    app:srcCompat="@mipmap/rocket_icon" />
+    app:layout_constraintVertical_bias="1.0" />
 
   <TextView
     android:id="@+id/textView14"
@@ -76,11 +78,12 @@
     android:layout_height="36dp"
     android:layout_marginStart="8dp"
     android:contentDescription="Rovers"
+    android:scaleType="fitCenter"
+    android:src="@drawable/rover_icon"
     app:layout_constraintBottom_toBottomOf="@+id/rocketIcon"
     app:layout_constraintEnd_toEndOf="@+id/textView14"
     app:layout_constraintStart_toStartOf="@+id/textView14"
-    app:layout_constraintTop_toTopOf="@+id/rocketIcon"
-    app:srcCompat="@mipmap/rover_icon" />
+    app:layout_constraintTop_toTopOf="@+id/rocketIcon" />
 
 
   <TextView
@@ -147,15 +150,16 @@
 
   <ImageView
     android:id="@+id/doubleArrowsImage"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="75dp"
+    android:layout_height="75dp"
     android:layout_marginTop="15dp"
     android:layout_weight="1"
+    android:scaleType="fitCenter"
+    android:src="@drawable/double_arrows"
     app:layout_constraintBottom_toBottomOf="@+id/backgroundViewLeft"
     app:layout_constraintEnd_toEndOf="@+id/singleArrowImage"
     app:layout_constraintStart_toStartOf="@+id/singleArrowImage"
-    app:layout_constraintTop_toTopOf="@+id/backgroundViewLeft"
-    app:srcCompat="@mipmap/double_arrows" />
+    app:layout_constraintTop_toTopOf="@+id/backgroundViewLeft" />
 
   <TextView
     android:id="@+id/textView2"
@@ -193,10 +197,11 @@
     android:layout_width="93dp"
     android:layout_height="79dp"
     android:layout_weight="1"
+    android:scaleType="fitCenter"
+    android:src="@drawable/single_arrow"
     app:layout_constraintEnd_toEndOf="@+id/trackLabel"
     app:layout_constraintStart_toStartOf="@+id/trackLabel"
-    app:layout_constraintTop_toBottomOf="@+id/textView7"
-    app:srcCompat="@mipmap/single_arrow" />
+    app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
 
   <TextView
@@ -221,7 +226,9 @@
     app:layout_constraintBottom_toBottomOf="@+id/exploreLabel"
     app:layout_constraintEnd_toStartOf="@+id/exploreLabel"
     app:layout_constraintTop_toTopOf="@+id/exploreLabel"
-    app:srcCompat="@mipmap/galaxy" />
+    android:src="@drawable/galaxy"
+
+     />
 
   <TextView
     android:id="@+id/exploreLabel"
@@ -269,7 +276,8 @@
     app:layout_constraintBottom_toBottomOf="@+id/trackLabel"
     app:layout_constraintEnd_toStartOf="@+id/trackLabel"
     app:layout_constraintTop_toTopOf="@+id/trackLabel"
-    app:srcCompat="@mipmap/track_icon" />
+    android:src="@drawable/track_icon"
+     />
 
   <android.support.constraint.Guideline
     android:id="@+id/guideline"
