@@ -31,7 +31,10 @@
 package com.raywenderlich.android.razegalactic
 
 import android.os.Bundle
+import android.support.constraint.ConstraintSet
 import android.support.v7.app.AppCompatActivity
+import android.transition.TransitionManager
+import kotlinx.android.synthetic.main.keyframe1.*
 
 /**
  * Main Screen
@@ -42,6 +45,28 @@ class MainActivity : AppCompatActivity() {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.keyframe1)
 
-    // Your code
+
+    val constraintSet1 = ConstraintSet()
+    constraintSet1.clone(constraint_layout2)
+    val constraintSet2 = ConstraintSet()
+    constraintSet2.clone(this, R.layout.activity_main)
+
+    var changed = false
+    animationButton.setOnClickListener {
+
+      //apply the transition
+      TransitionManager.beginDelayedTransition(constraint_layout2)
+      val constraint = if (changed) constraintSet1 else constraintSet2
+      constraint.applyTo(constraint_layout2)
+
+      changed = !changed
+    }
+
+
+
+
   }
+
+
+
 }
