@@ -1,4 +1,4 @@
-package com.raywenderlich.android.constraintstutorial
+package com.raywenderlich.android.razegalactic
 
 import org.junit.Test
 

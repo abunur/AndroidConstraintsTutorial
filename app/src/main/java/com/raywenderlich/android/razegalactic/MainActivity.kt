@@ -28,10 +28,14 @@
  * THE SOFTWARE.
  */
 
-package com.raywenderlich.android.constraintstutorial
+package com.raywenderlich.android.razegalactic
 
 import android.os.Bundle
+import android.support.constraint.ConstraintSet
 import android.support.v7.app.AppCompatActivity
+import android.transition.AutoTransition
+import android.transition.TransitionManager
+import kotlinx.android.synthetic.main.keyframe1.*
 
 /**
  * Main Screen
@@ -40,8 +44,45 @@ class MainActivity : AppCompatActivity() {
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
-    setContentView(R.layout.activity_main)
+    setContentView(R.layout.keyframe1)
 
-    // Your code
+
+    val constraintSet1 = ConstraintSet()
+    constraintSet1.clone(constraint_layout2)
+    val constraintSet2 = ConstraintSet()
+    constraintSet2.clone(this, R.layout.activity_main)
+
+    var changed = false
+    animationButton.setOnClickListener {
+
+      //apply the transition
+      TransitionManager.beginDelayedTransition(constraint_layout2)
+      val constraint = if (changed) constraintSet1 else constraintSet2
+      constraint.applyTo(constraint_layout2)
+
+      changed = !changed
+    }
   }
+
+  /**
+   *  To view this animation over and over, minimize the app and then re-launch it
+   */
+  override fun onStart() {
+    super.onStart()
+
+    val constraintSet2 = ConstraintSet()
+    constraintSet2.clone(this, R.layout.activity_main)
+
+    //apply the transition
+//    TransitionManager.beginDelayedTransition(constraint_layout2)
+    val transition = AutoTransition()
+    transition.duration = 1000
+    TransitionManager.beginDelayedTransition(
+        constraint_layout2, transition)
+
+    constraintSet2.applyTo(constraint_layout2)
+
+  }
+
+
 }

@@ -28,7 +28,7 @@
  * THE SOFTWARE.
  */
 
-package com.raywenderlich.android.constraintstutorial
+package com.raywenderlich.android.razegalactic
 
 import android.content.Intent
 import android.os.Bundle

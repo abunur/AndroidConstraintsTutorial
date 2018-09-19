@@ -1,4 +1,4 @@
-package com.raywenderlich.android.constraintstutorial
+package com.raywenderlich.android.razegalactic
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4

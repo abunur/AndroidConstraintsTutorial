@@ -1,3 +1,8 @@
 <resources>
-  <string name="app_name">ConstraintsTutorial</string>
+  <string name="app_name">Raze Galactic</string>
+  <string name="rovers">Rovers</string>
+  <string name="round_trip">Round Trip</string>
+  <string name="roundTripSwitch">...</string>
+  <string name="space_stations">Space Stations</string>
+  <string name="flights">Flights</string>
 </resources>

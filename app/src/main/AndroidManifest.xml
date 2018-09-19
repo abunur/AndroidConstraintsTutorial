@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.raywenderlich.android.constraintstutorial"
+<manifest package="com.raywenderlich.android.razegalactic"
           xmlns:android="http://schemas.android.com/apk/res/android">
 
   <application
@@ -11,7 +11,7 @@
       android:theme="@style/AppTheme">
 
     <!-- Splash Activity -->
-    <activity android:name="com.raywenderlich.android.constraintstutorial.SplashActivity">
+    <activity android:name="com.raywenderlich.android.razegalactic.SplashActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN"/>
 
@@ -20,7 +20,7 @@
     </activity>
 
     <!-- Main Activity -->
-    <activity android:name="com.raywenderlich.android.constraintstutorial.MainActivity"/>
+    <activity android:name="com.raywenderlich.android.razegalactic.MainActivity"/>
   </application>
 
 </manifest>
