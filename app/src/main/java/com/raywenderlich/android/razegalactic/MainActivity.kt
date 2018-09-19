@@ -61,12 +61,19 @@ class MainActivity : AppCompatActivity() {
 
       changed = !changed
     }
-
-
-
-
   }
 
+  override fun onStart() {
+    super.onStart()
+
+    val constraintSet2 = ConstraintSet()
+    constraintSet2.clone(this, R.layout.activity_main)
+
+    //apply the transition
+    TransitionManager.beginDelayedTransition(constraint_layout2)
+    constraintSet2.applyTo(constraint_layout2)
+
+  }
 
 
 }
