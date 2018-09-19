@@ -33,6 +33,7 @@ package com.raywenderlich.android.razegalactic
 import android.os.Bundle
 import android.support.constraint.ConstraintSet
 import android.support.v7.app.AppCompatActivity
+import android.transition.AutoTransition
 import android.transition.TransitionManager
 import kotlinx.android.synthetic.main.keyframe1.*
 
@@ -63,6 +64,9 @@ class MainActivity : AppCompatActivity() {
     }
   }
 
+  /**
+   *  To view this animation over and over, minimize the app and then re-launch it
+   */
   override fun onStart() {
     super.onStart()
 
@@ -70,7 +74,12 @@ class MainActivity : AppCompatActivity() {
     constraintSet2.clone(this, R.layout.activity_main)
 
     //apply the transition
-    TransitionManager.beginDelayedTransition(constraint_layout2)
+//    TransitionManager.beginDelayedTransition(constraint_layout2)
+    val transition = AutoTransition()
+    transition.duration = 1000
+    TransitionManager.beginDelayedTransition(
+        constraint_layout2, transition)
+
     constraintSet2.applyTo(constraint_layout2)
 
   }
