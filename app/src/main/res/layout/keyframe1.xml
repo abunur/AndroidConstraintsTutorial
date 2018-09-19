@@ -2,13 +2,12 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/constraint_layout2"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
   android:orientation="vertical"
   tools:context=".MainActivity"
-  tools:layout_editor_absoluteY="81dp"
-  android:id="@+id/constraint_layout2"
-  >
+  tools:layout_editor_absoluteY="81dp">
 
 
   <TextView
@@ -98,11 +97,11 @@
     android:text="@string/round_trip"
 
     app:layout_constraintBottom_toTopOf="@+id/guideline2"
-    app:layout_constraintTop_toBottomOf="@+id/flightsText"
-
     app:layout_constraintEnd_toEndOf="@+id/doubleArrowsImage"
 
     app:layout_constraintStart_toStartOf="@+id/doubleArrowsImage"
+
+    app:layout_constraintTop_toBottomOf="@+id/flightsText"
     app:layout_constraintVertical_bias="1.0" />
 
   <Switch
@@ -110,13 +109,12 @@
     android:layout_width="0dp"
     android:layout_height="wrap_content"
 
-    app:layout_constraintStart_toEndOf="@+id/roundTripLabel"
-
     app:layout_constraintBottom_toTopOf="@+id/roundTripLabel"
+
+    app:layout_constraintStart_toEndOf="@+id/roundTripLabel"
     app:layout_constraintTop_toBottomOf="@+id/roundTripLabel"
 
-    tools:layout_editor_absoluteY="121dp"
-    />
+    tools:layout_editor_absoluteY="121dp" />
 
 
   <View
@@ -163,12 +161,12 @@
     android:src="@drawable/double_arrows"
 
     app:layout_constraintBottom_toBottomOf="@+id/backgroundViewLeft"
+    app:layout_constraintEnd_toEndOf="@+id/singleArrowImage"
+
+    app:layout_constraintStart_toStartOf="@+id/singleArrowImage"
     app:layout_constraintTop_toTopOf="@+id/backgroundViewLeft"
 
-    app:layout_constraintEnd_toEndOf="@+id/singleArrowImage"
-    app:layout_constraintStart_toStartOf="@+id/singleArrowImage"
-
-     />
+    />
 
   <TextView
     android:id="@+id/textView2"
@@ -232,12 +230,12 @@
     android:layout_marginEnd="8dp"
     android:layout_weight="1"
     android:scaleType="fitCenter"
+    android:src="@drawable/galaxy"
     app:layout_constraintBottom_toBottomOf="@+id/exploreLabel"
     app:layout_constraintEnd_toStartOf="@+id/exploreLabel"
     app:layout_constraintTop_toTopOf="@+id/exploreLabel"
-    android:src="@drawable/galaxy"
 
-     />
+    />
 
   <TextView
     android:id="@+id/exploreLabel"
@@ -282,11 +280,10 @@
     android:layout_marginEnd="8dp"
     android:layout_weight="1"
     android:scaleType="fitCenter"
+    android:src="@drawable/track_icon"
     app:layout_constraintBottom_toBottomOf="@+id/trackLabel"
     app:layout_constraintEnd_toStartOf="@+id/trackLabel"
-    app:layout_constraintTop_toTopOf="@+id/trackLabel"
-    android:src="@drawable/track_icon"
-     />
+    app:layout_constraintTop_toTopOf="@+id/trackLabel" />
 
   <android.support.constraint.Guideline
     android:id="@+id/guideline"
