@@ -122,7 +122,7 @@
     android:layout_width="124dp"
     android:layout_height="98dp"
     android:layout_marginStart="16dp"
-    android:background="#f00"
+    android:background="@color/colorPrimary"
     app:layout_constraintBottom_toBottomOf="@+id/backgroundViewLeft"
 
 
@@ -137,7 +137,7 @@
     android:layout_height="98dp"
     android:layout_marginEnd="16dp"
 
-    android:background="#f00"
+    android:background="@color/colorPrimary"
 
     app:layout_constraintEnd_toStartOf="@+id/guideline3"
     app:layout_constraintTop_toTopOf="@+id/guideline2" />
@@ -148,6 +148,7 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="8dp"
     android:text="DCA"
+    android:textColor="#fff"
     app:layout_constraintEnd_toEndOf="@+id/backgroundViewLeft"
     app:layout_constraintStart_toStartOf="@+id/backgroundViewLeft"
     app:layout_constraintTop_toTopOf="@+id/backgroundViewLeft" />
@@ -174,6 +175,7 @@
     android:layout_height="wrap_content"
     android:layout_weight="1"
     android:text="MARS"
+    android:textColor="#fff"
     app:layout_constraintBaseline_toBaselineOf="@+id/textView6"
     app:layout_constraintEnd_toEndOf="@+id/backgroundViewRight"
     app:layout_constraintStart_toStartOf="@+id/backgroundViewRight" />
@@ -254,11 +256,13 @@
 
   <TextView
     android:id="@+id/originCityLabel"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginBottom="8dp"
+    android:layout_width="82dp"
+    android:layout_height="35dp"
     android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
     android:text="Washington, D.C."
+    android:textColor="@color/colorAccent"
+    android:textAlignment="center"
     app:layout_constraintBottom_toBottomOf="@+id/backgroundViewLeft"
     app:layout_constraintEnd_toEndOf="@+id/textView6"
     app:layout_constraintStart_toStartOf="@+id/textView6"
@@ -266,9 +270,11 @@
 
   <TextView
     android:id="@+id/destinationCityLabel"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Mars Colony"
+    android:layout_width="79dp"
+    android:layout_height="36dp"
+    android:text="Mars Colonies"
+    android:textColor="@color/colorAccent"
+    android:textAlignment="center"
     app:layout_constraintBaseline_toBaselineOf="@+id/originCityLabel"
     app:layout_constraintEnd_toEndOf="@+id/textView2"
     app:layout_constraintStart_toStartOf="@+id/textView2" />
