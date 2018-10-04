@@ -26,7 +26,7 @@
       android:layout_width="91dp"
       android:layout_height="25dp"
       android:layout_weight="1"
-      app:srcCompat="@mipmap/spaceStationIcon"
+      android:src="@drawable/space_station_icon"
        />
     <TextView
       android:layout_width="wrap_content"
@@ -42,7 +42,7 @@
       android:layout_width="31dp"
       android:layout_height="33dp"
       android:layout_weight="1"
-      app:srcCompat="@mipmap/rocketIcon"
+      android:src="@drawable/rocket_icon"
        />
     <TextView
       android:layout_width="wrap_content"
@@ -58,7 +58,7 @@
       android:layout_width="35dp"
       android:layout_height="29dp"
       android:layout_weight="1"
-      app:srcCompat="@mipmap/roverIcon"
+      android:src="@drawable/rover_icon"
      />
   </LinearLayout>
 
@@ -101,7 +101,7 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_weight="1"
-      app:srcCompat="@mipmap/double_arrows" />
+      android:src="@drawable/double_arrows" />
 
     <TextView
       android:id="@+id/textView2"
@@ -141,7 +141,7 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_weight="1"
-      app:srcCompat="@mipmap/singleArrow" />
+      android:src="@drawable/single_arrow" />
   </LinearLayout>
   <LinearLayout
     android:layout_width="match_parent"
@@ -153,7 +153,7 @@
       android:layout_width="wrap_content"
       android:layout_height="33dp"
       android:layout_weight="1"
-      app:srcCompat="@mipmap/trackIcon" />
+      android:src="@drawable/track_icon" />
     <TextView
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
@@ -174,7 +174,7 @@
       android:id="@+id/imageView9"
       android:layout_height="wrap_content"
       android:layout_weight="1"
-      app:srcCompat="@mipmap/galaxy"
+      android:src="@drawable/galaxy"
       android:layout_width="wrap_content" />
 
     <TextView
