@@ -102,12 +102,9 @@
     android:id="@+id/switch1"
     android:layout_width="0dp"
     android:layout_height="wrap_content"
-
     app:layout_constraintBottom_toTopOf="@+id/roundTripLabel"
-
     app:layout_constraintStart_toEndOf="@+id/roundTripLabel"
     app:layout_constraintTop_toBottomOf="@+id/roundTripLabel"
-
     tools:layout_editor_absoluteY="121dp" />
 
 
@@ -150,10 +147,8 @@
     android:layout_weight="1"
     android:scaleType="fitCenter"
     android:src="@drawable/double_arrows"
-
     app:layout_constraintBottom_toBottomOf="@+id/backgroundViewLeft"
     app:layout_constraintEnd_toEndOf="@+id/singleArrowImage"
-
     app:layout_constraintStart_toStartOf="@+id/singleArrowImage"
     app:layout_constraintTop_toTopOf="@+id/backgroundViewLeft"
 
