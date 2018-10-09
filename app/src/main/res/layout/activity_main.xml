@@ -10,41 +10,41 @@
 
 
   <TextView
-    android:id="@+id/textView12"
+    android:id="@+id/spaceStationLabel"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginStart="8dp"
     android:layout_marginEnd="8dp"
     android:text="@string/space_stations"
-    app:layout_constraintBaseline_toBaselineOf="@+id/flightsText"
-    app:layout_constraintEnd_toStartOf="@+id/flightsText"
+    app:layout_constraintBaseline_toBaselineOf="@+id/flightsLabel"
+    app:layout_constraintEnd_toStartOf="@+id/flightsLabel"
     app:layout_constraintStart_toStartOf="parent" />
 
 
   <ImageView
-    android:id="@+id/imageView2"
+    android:id="@+id/spaceStationIcon"
     android:layout_width="41dp"
     android:layout_height="33dp"
     android:layout_marginStart="8dp"
     android:layout_marginEnd="8dp"
     android:scaleType="fitCenter"
     android:src="@drawable/space_station_icon"
-    app:layout_constraintEnd_toEndOf="@+id/textView12"
-    app:layout_constraintStart_toStartOf="@+id/textView12"
+    app:layout_constraintEnd_toEndOf="@+id/spaceStationLabel"
+    app:layout_constraintStart_toStartOf="@+id/spaceStationLabel"
     tools:layout_editor_absoluteY="14dp" />
 
   <TextView
-    android:id="@+id/flightsText"
+    android:id="@+id/flightsLabel"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginTop="10dp"
     android:text="@string/flights"
     app:layout_constraintEnd_toEndOf="@+id/roundTripLabel"
     app:layout_constraintStart_toStartOf="@+id/roundTripLabel"
-    app:layout_constraintTop_toBottomOf="@+id/rocketIcon" />
+    app:layout_constraintTop_toBottomOf="@+id/flightsIcon" />
 
   <ImageView
-    android:id="@+id/rocketIcon"
+    android:id="@+id/flightsIcon"
     android:layout_width="40dp"
     android:layout_height="35dp"
     android:layout_marginStart="8dp"
@@ -52,35 +52,35 @@
     android:layout_marginEnd="8dp"
     android:scaleType="fitCenter"
     android:src="@drawable/rocket_icon"
-    app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-    app:layout_constraintEnd_toEndOf="@+id/flightsText"
+    app:layout_constraintBottom_toBottomOf="@+id/spaceStationIcon"
+    app:layout_constraintEnd_toEndOf="@+id/flightsLabel"
+    app:layout_constraintStart_toStartOf="@+id/flightsLabel"
     app:layout_constraintHorizontal_bias="0.538"
-    app:layout_constraintStart_toStartOf="@+id/flightsText"
     app:layout_constraintTop_toTopOf="parent"
     app:layout_constraintVertical_bias="1.0" />
 
   <TextView
-    android:id="@+id/textView14"
+    android:id="@+id/roverLabel"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginStart="8dp"
     android:layout_marginEnd="8dp"
     android:text="@string/rovers"
-    app:layout_constraintBaseline_toBaselineOf="@+id/flightsText"
+    app:layout_constraintBaseline_toBaselineOf="@+id/flightsLabel"
     app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toEndOf="@+id/flightsText" />
+    app:layout_constraintStart_toEndOf="@+id/flightsLabel" />
 
   <ImageView
-    android:id="@+id/imageView4"
+    android:id="@+id/roverIcon"
     android:layout_width="38dp"
     android:layout_height="36dp"
     android:layout_marginStart="8dp"
     android:scaleType="fitCenter"
     android:src="@drawable/rover_icon"
-    app:layout_constraintBottom_toBottomOf="@+id/rocketIcon"
-    app:layout_constraintEnd_toEndOf="@+id/textView14"
-    app:layout_constraintStart_toStartOf="@+id/textView14"
-    app:layout_constraintTop_toTopOf="@+id/rocketIcon" />
+    app:layout_constraintBottom_toBottomOf="@+id/flightsIcon"
+    app:layout_constraintEnd_toEndOf="@+id/roverLabel"
+    app:layout_constraintStart_toStartOf="@+id/roverLabel"
+    app:layout_constraintTop_toTopOf="@+id/flightsIcon" />
 
 
   <TextView
@@ -97,7 +97,7 @@
 
     app:layout_constraintStart_toStartOf="@+id/doubleArrowsImage"
 
-    app:layout_constraintTop_toBottomOf="@+id/flightsText"
+    app:layout_constraintTop_toBottomOf="@+id/flightsLabel"
     app:layout_constraintVertical_bias="1.0" />
 
   <Switch
