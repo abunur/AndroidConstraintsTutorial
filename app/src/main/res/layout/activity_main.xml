@@ -29,9 +29,10 @@
     android:layout_marginEnd="8dp"
     android:scaleType="fitCenter"
     android:src="@drawable/space_station_icon"
+    app:layout_constraintBottom_toBottomOf="@+id/flightsIcon"
     app:layout_constraintEnd_toEndOf="@+id/spaceStationLabel"
     app:layout_constraintStart_toStartOf="@+id/spaceStationLabel"
-    tools:layout_editor_absoluteY="14dp" />
+    app:layout_constraintTop_toTopOf="@+id/flightsIcon" />
 
   <TextView
     android:id="@+id/flightsLabel"
@@ -52,11 +53,11 @@
     android:layout_marginEnd="8dp"
     android:scaleType="fitCenter"
     android:src="@drawable/rocket_icon"
-    app:layout_constraintBottom_toBottomOf="@+id/spaceStationIcon"
+    app:layout_constraintBottom_toBottomOf="@+id/roverIcon"
     app:layout_constraintEnd_toEndOf="@+id/flightsLabel"
-    app:layout_constraintStart_toStartOf="@+id/flightsLabel"
     app:layout_constraintHorizontal_bias="0.538"
-    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="@+id/flightsLabel"
+    app:layout_constraintTop_toTopOf="@+id/roverIcon"
     app:layout_constraintVertical_bias="1.0" />
 
   <TextView
