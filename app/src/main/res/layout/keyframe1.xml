@@ -90,13 +90,12 @@
     android:layout_marginTop="8dp"
     android:layout_marginBottom="8dp"
     android:text="@string/round_trip"
-    app:layout_constraintBottom_toTopOf="@+id/guideline2"
     app:layout_constraintEnd_toEndOf="@+id/doubleArrowsImage"
-
     app:layout_constraintStart_toStartOf="@+id/doubleArrowsImage"
-
     app:layout_constraintTop_toBottomOf="@+id/flightsLabel"
-    app:layout_constraintVertical_bias="1.0" />
+    app:layout_constraintBottom_toTopOf="@+id/guideline"
+    app:layout_constraintVertical_bias="0.312"
+    />
 
   <Switch
     android:id="@+id/switch1"
