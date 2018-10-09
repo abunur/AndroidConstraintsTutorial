@@ -13,38 +13,40 @@
     android:orientation="horizontal">
 
     <TextView
+      android:id="@+id/spaceStationLabel"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:text="@string/space_stations"
-
       />
 
     <ImageView
-      android:id="@+id/imageView2"
+      android:id="@+id/spaceStationIcon"
       android:layout_width="91dp"
       android:layout_height="25dp"
       android:layout_weight="1"
       android:src="@drawable/space_station_icon" />
 
     <TextView
+      android:id="@+id/flightsLabel"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:text="@string/flights" />
 
     <ImageView
-      android:id="@+id/imageView3"
+      android:id="@+id/flightsIcon"
       android:layout_width="31dp"
       android:layout_height="33dp"
       android:layout_weight="1"
       android:src="@drawable/rocket_icon" />
 
     <TextView
+      android:id="@+id/roverLabel"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:text="@string/rovers" />
 
     <ImageView
-      android:id="@+id/imageView4"
+      android:id="@+id/roverIcon"
       android:layout_width="35dp"
       android:layout_height="29dp"
       android:layout_weight="1"
@@ -78,7 +80,7 @@
     <TextView
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="DCA" />
+      android:text="@string/dca" />
 
     <ImageView
       android:id="@+id/imageView6"
@@ -92,7 +94,7 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_weight="1"
-      android:text="MARS" />
+      android:text="@string/mars" />
   </LinearLayout>
 
   <LinearLayout
@@ -103,14 +105,14 @@
     <TextView
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Sept 14 - 17" />
+      android:text="@string/sept_14_17" />
 
     <TextView
       android:id="@+id/textView3"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_weight="1"
-      android:text="1 Traveller" />
+      android:text="@string/_1_traveller" />
   </LinearLayout>
 
   <LinearLayout
@@ -141,7 +143,7 @@
     <TextView
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Track the status of a Journey" />
+      android:text="@string/track_the_status_of_a_journey" />
 
   </LinearLayout>
 
@@ -160,7 +162,7 @@
     <TextView
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Explore the Universe" />
+      android:text="@string/explore_the_universe" />
   </LinearLayout>
 
 </LinearLayout>
