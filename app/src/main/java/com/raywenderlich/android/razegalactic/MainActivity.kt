@@ -52,8 +52,8 @@ class MainActivity : AppCompatActivity() {
     val constraintSet2 = ConstraintSet()
     constraintSet2.clone(this, R.layout.activity_main)
 
-    var changed = false
-
+    var changed = true
+    switch1.isChecked = true
     switch1.setOnClickListener {
       //apply the transition
       TransitionManager.beginDelayedTransition(constraint_layout2)

@@ -103,10 +103,11 @@
     android:id="@+id/switch1"
     android:layout_width="0dp"
     android:layout_height="wrap_content"
+    android:checked="true"
     app:layout_constraintBottom_toTopOf="@+id/roundTripLabel"
     app:layout_constraintStart_toEndOf="@+id/roundTripLabel"
     app:layout_constraintTop_toBottomOf="@+id/roundTripLabel"
-    tools:layout_editor_absoluteY="121dp" />
+    tools:checked="true" />
 
   <View
     android:id="@+id/backgroundViewRight"
