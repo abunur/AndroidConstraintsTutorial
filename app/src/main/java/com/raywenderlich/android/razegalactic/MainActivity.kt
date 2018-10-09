@@ -46,7 +46,6 @@ class MainActivity : AppCompatActivity() {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.keyframe1)
 
-
     val constraintSet1 = ConstraintSet()
     constraintSet1.clone(constraint_layout2)
     val constraintSet2 = ConstraintSet()
@@ -64,14 +63,12 @@ class MainActivity : AppCompatActivity() {
     }
   }
 
-  /**
-   *  To view this animation over and over, minimize the app and then re-launch it
-   */
-  override fun onStart() {
-    super.onStart()
 
-    val constraintSet2 = ConstraintSet()
-    constraintSet2.clone(this, R.layout.activity_main)
+  override fun onWindowFocusChanged(hasFocus: Boolean) {
+    super.onWindowFocusChanged(hasFocus)
+
+    val constraintSet3 = ConstraintSet()
+    constraintSet3.clone(this, R.layout.activity_main)
 
     //apply the transition
 //    TransitionManager.beginDelayedTransition(constraint_layout2)
@@ -80,8 +77,7 @@ class MainActivity : AppCompatActivity() {
     TransitionManager.beginDelayedTransition(
         constraint_layout2, transition)
 
-    constraintSet2.applyTo(constraint_layout2)
-
+    constraintSet3.applyTo(constraint_layout2)
   }
 
 
