@@ -262,9 +262,9 @@
     android:layout_weight="1"
     android:scaleType="fitCenter"
     android:src="@drawable/track_icon"
-    app:layout_constraintBottom_toBottomOf="@+id/trackLabel"
-    app:layout_constraintEnd_toStartOf="@+id/trackLabel"
-    app:layout_constraintTop_toTopOf="@+id/trackLabel" />
+    app:layout_constraintCircle="@id/singleArrowImage"
+    app:layout_constraintCircleRadius="100dp"
+    app:layout_constraintCircleAngle="180" />
 
   <android.support.constraint.Guideline
     android:id="@+id/guideline"
