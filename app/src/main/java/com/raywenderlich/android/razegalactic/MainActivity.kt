@@ -60,20 +60,17 @@ class MainActivity : AppCompatActivity() {
 
   }
 
-
-  override fun onWindowFocusChanged(hasFocus: Boolean) {
-    super.onWindowFocusChanged(hasFocus)
+  override fun onEnterAnimationComplete() {
+    super.onEnterAnimationComplete()
 
     constraintSet2.clone(this, R.layout.activity_main)
 
     //apply the transition
     val transition = AutoTransition()
     transition.duration = 1000
-    TransitionManager.beginDelayedTransition(
-        constraintLayout, transition)
+    TransitionManager.beginDelayedTransition(constraintLayout, transition)
 
     constraintSet2.applyTo(constraintLayout)
   }
-
 
 }
