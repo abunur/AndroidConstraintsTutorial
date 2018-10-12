@@ -57,7 +57,6 @@ class MainActivity : AppCompatActivity() {
       val constraint = if (!isChecked) constraintSet1 else constraintSet2
       constraint.applyTo(constraintLayout)
     }
-
   }
 
   override fun onEnterAnimationComplete() {
@@ -72,5 +71,4 @@ class MainActivity : AppCompatActivity() {
 
     constraintSet2.applyTo(constraintLayout)
   }
-
 }

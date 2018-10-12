@@ -8,7 +8,6 @@
   tools:context=".MainActivity"
   tools:layout_editor_absoluteY="81dp">
 
-
   <TextView
     android:id="@+id/spaceStationLabel"
     android:layout_width="wrap_content"
@@ -19,7 +18,6 @@
     app:layout_constraintBaseline_toBaselineOf="@+id/flightsLabel"
     app:layout_constraintEnd_toStartOf="@+id/flightsLabel"
     app:layout_constraintStart_toStartOf="parent" />
-
 
   <ImageView
     android:id="@+id/spaceStationIcon"
@@ -83,7 +81,6 @@
     app:layout_constraintStart_toStartOf="@+id/roverLabel"
     app:layout_constraintTop_toTopOf="@+id/flightsIcon" />
 
-
   <TextView
     android:id="@+id/roundTripLabel"
     android:layout_width="wrap_content"
@@ -91,13 +88,12 @@
     android:layout_marginTop="8dp"
     android:layout_marginBottom="8dp"
     android:text="@string/round_trip"
+    app:layout_constraintBottom_toTopOf="@+id/guideline"
     app:layout_constraintEnd_toEndOf="@+id/doubleArrowsImage"
     app:layout_constraintHorizontal_bias="1.0"
     app:layout_constraintStart_toStartOf="@+id/doubleArrowsImage"
     app:layout_constraintTop_toBottomOf="@+id/flightsLabel"
-    app:layout_constraintBottom_toTopOf="@+id/guideline"
-    app:layout_constraintVertical_bias="0.312"
-    />
+    app:layout_constraintVertical_bias="0.312" />
 
   <Switch
     android:id="@+id/switch1"
@@ -119,7 +115,6 @@
     app:layout_constraintStart_toStartOf="@+id/guideline3"
     app:layout_constraintTop_toTopOf="@+id/backgroundViewLeft"
     app:layout_constraintVertical_bias="0.644" />
-
 
   <View
     android:id="@+id/backgroundViewLeft"
@@ -148,14 +143,10 @@
     android:layout_weight="1"
     android:scaleType="fitCenter"
     android:src="@drawable/double_arrows"
-
     app:layout_constraintBottom_toBottomOf="@+id/backgroundViewLeft"
     app:layout_constraintEnd_toEndOf="@+id/singleArrowImage"
-
     app:layout_constraintStart_toStartOf="@+id/singleArrowImage"
-    app:layout_constraintTop_toTopOf="@+id/backgroundViewLeft"
-
-    />
+    app:layout_constraintTop_toTopOf="@+id/backgroundViewLeft" />
 
   <TextView
     android:id="@+id/textView2"
@@ -200,7 +191,6 @@
     app:layout_constraintStart_toStartOf="@+id/trackLabel"
     app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
-
   <TextView
     android:id="@+id/trackLabel"
     android:layout_width="wrap_content"
@@ -223,9 +213,7 @@
     android:src="@drawable/galaxy"
     app:layout_constraintBottom_toBottomOf="@+id/exploreLabel"
     app:layout_constraintEnd_toStartOf="@+id/exploreLabel"
-    app:layout_constraintTop_toTopOf="@+id/exploreLabel"
-
-    />
+    app:layout_constraintTop_toTopOf="@+id/exploreLabel" />
 
   <TextView
     android:id="@+id/exploreLabel"
@@ -240,7 +228,6 @@
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/trackLabel" />
-
 
   <TextView
     android:id="@+id/originCityLabel"
@@ -299,6 +286,5 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     app:layout_constraintGuide_percent="0.50121653" />
-
 
 </android.support.constraint.ConstraintLayout>
