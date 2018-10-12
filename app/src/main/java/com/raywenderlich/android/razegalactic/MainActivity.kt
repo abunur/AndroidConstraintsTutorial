@@ -37,9 +37,6 @@ import android.transition.AutoTransition
 import android.transition.TransitionManager
 import kotlinx.android.synthetic.main.keyframe1.*
 
-/**
- * Main Screen
- */
 class MainActivity : AppCompatActivity() {
 
   override fun onCreate(savedInstanceState: Bundle?) {
