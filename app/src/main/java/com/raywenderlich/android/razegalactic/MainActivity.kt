@@ -39,22 +39,23 @@ import kotlinx.android.synthetic.main.keyframe1.*
 
 class MainActivity : AppCompatActivity() {
 
+  var changed = true
+  val constraintSet1 = ConstraintSet()
+  val constraintSet2 = ConstraintSet()
+
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.keyframe1)
 
-    val constraintSet1 = ConstraintSet()
-    constraintSet1.clone(constraint_layout2)
-    val constraintSet2 = ConstraintSet()
+    constraintSet1.clone(constraintLayout)
     constraintSet2.clone(this, R.layout.activity_main)
 
-    var changed = true
     switch1.isChecked = true
     switch1.setOnClickListener {
       //apply the transition
-      TransitionManager.beginDelayedTransition(constraint_layout2)
+      TransitionManager.beginDelayedTransition(constraintLayout)
       val constraint = if (changed) constraintSet1 else constraintSet2
-      constraint.applyTo(constraint_layout2)
+      constraint.applyTo(constraintLayout)
 
       changed = !changed
     }
@@ -64,17 +65,16 @@ class MainActivity : AppCompatActivity() {
   override fun onWindowFocusChanged(hasFocus: Boolean) {
     super.onWindowFocusChanged(hasFocus)
 
-    val constraintSet3 = ConstraintSet()
-    constraintSet3.clone(this, R.layout.activity_main)
+    constraintSet2.clone(this, R.layout.activity_main)
 
     //apply the transition
 //    TransitionManager.beginDelayedTransition(constraint_layout2)
     val transition = AutoTransition()
     transition.duration = 1000
     TransitionManager.beginDelayedTransition(
-        constraint_layout2, transition)
+        constraintLayout, transition)
 
-    constraintSet3.applyTo(constraint_layout2)
+    constraintSet2.applyTo(constraintLayout)
   }
 
 
