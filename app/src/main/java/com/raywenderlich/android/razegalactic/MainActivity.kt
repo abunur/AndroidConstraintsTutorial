@@ -38,7 +38,7 @@ import android.transition.TransitionManager
 import kotlinx.android.synthetic.main.keyframe1.*
 
 class MainActivity : AppCompatActivity() {
-  
+
   val constraintSet1 = ConstraintSet()
   val constraintSet2 = ConstraintSet()
 
