@@ -8,7 +8,7 @@
   <string name="dca">DCA</string>
   <string name="mars">MARS</string>
   <string name="sept_14_17">Sept 14 - 17</string>
-  <string name="track_the_status_of_a_journey">Track the status of a Journey</string>
+  <string name="track_journey">Track the status of a Journey</string>
   <string name="_1_traveller">1 Traveller</string>
   <string name="explore_the_universe">Explore the Universe</string>
 </resources>
