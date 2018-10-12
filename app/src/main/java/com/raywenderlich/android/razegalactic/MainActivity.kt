@@ -68,7 +68,6 @@ class MainActivity : AppCompatActivity() {
     constraintSet2.clone(this, R.layout.activity_main)
 
     //apply the transition
-//    TransitionManager.beginDelayedTransition(constraint_layout2)
     val transition = AutoTransition()
     transition.duration = 1000
     TransitionManager.beginDelayedTransition(
