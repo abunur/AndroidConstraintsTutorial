@@ -38,8 +38,7 @@ import android.transition.TransitionManager
 import kotlinx.android.synthetic.main.keyframe1.*
 
 class MainActivity : AppCompatActivity() {
-
-  var changed = true
+  
   val constraintSet1 = ConstraintSet()
   val constraintSet2 = ConstraintSet()
 
@@ -51,14 +50,14 @@ class MainActivity : AppCompatActivity() {
     constraintSet2.clone(this, R.layout.activity_main)
 
     switch1.isChecked = true
-    switch1.setOnClickListener {
+
+    switch1.setOnCheckedChangeListener { _, isChecked ->
       //apply the transition
       TransitionManager.beginDelayedTransition(constraintLayout)
-      val constraint = if (changed) constraintSet1 else constraintSet2
+      val constraint = if (!isChecked) constraintSet1 else constraintSet2
       constraint.applyTo(constraintLayout)
-
-      changed = !changed
     }
+
   }
 
 
