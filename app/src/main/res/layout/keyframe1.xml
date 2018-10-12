@@ -8,7 +8,6 @@
   tools:context=".MainActivity"
   tools:layout_editor_absoluteY="81dp">
 
-
   <TextView
     android:id="@+id/spaceStationLabel"
     android:layout_width="wrap_content"
@@ -20,7 +19,6 @@
     app:layout_constraintEnd_toStartOf="@+id/flightsLabel"
     app:layout_constraintStart_toStartOf="parent" />
 
-
   <ImageView
     android:id="@+id/spaceStationIcon"
     android:layout_width="41dp"
@@ -29,9 +27,10 @@
     android:layout_marginEnd="8dp"
     android:scaleType="fitCenter"
     android:src="@drawable/space_station_icon"
+    app:layout_constraintBottom_toBottomOf="@+id/flightsIcon"
     app:layout_constraintEnd_toEndOf="@+id/spaceStationLabel"
     app:layout_constraintStart_toStartOf="@+id/spaceStationLabel"
-    tools:layout_editor_absoluteY="14dp" />
+    app:layout_constraintTop_toTopOf="@+id/flightsIcon" />
 
   <TextView
     android:id="@+id/flightsLabel"
@@ -82,7 +81,6 @@
     app:layout_constraintStart_toStartOf="@+id/roverLabel"
     app:layout_constraintTop_toTopOf="@+id/flightsIcon" />
 
-
   <TextView
     android:id="@+id/roundTripLabel"
     android:layout_width="wrap_content"
@@ -90,12 +88,11 @@
     android:layout_marginTop="8dp"
     android:layout_marginBottom="8dp"
     android:text="@string/round_trip"
+    app:layout_constraintBottom_toTopOf="@+id/guideline"
     app:layout_constraintEnd_toEndOf="@+id/doubleArrowsImage"
     app:layout_constraintStart_toStartOf="@+id/doubleArrowsImage"
     app:layout_constraintTop_toBottomOf="@+id/flightsLabel"
-    app:layout_constraintBottom_toTopOf="@+id/guideline"
-    app:layout_constraintVertical_bias="0.312"
-    />
+    app:layout_constraintVertical_bias="0.312" />
 
   <Switch
     android:id="@+id/switch1"
@@ -105,7 +102,6 @@
     app:layout_constraintStart_toEndOf="@+id/roundTripLabel"
     app:layout_constraintTop_toBottomOf="@+id/roundTripLabel"
     tools:layout_editor_absoluteY="121dp" />
-
 
   <View
     android:id="@+id/backgroundViewRight"
@@ -117,7 +113,6 @@
     app:layout_constraintStart_toStartOf="@+id/guideline3"
     app:layout_constraintTop_toTopOf="@+id/backgroundViewLeft"
     app:layout_constraintVertical_bias="0.644" />
-
 
   <View
     android:id="@+id/backgroundViewLeft"
@@ -133,7 +128,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginTop="8dp"
-    android:text="DCA"
+    android:text="@string/dca"
     android:textColor="#fff"
     app:layout_constraintEnd_toEndOf="@+id/backgroundViewLeft"
     app:layout_constraintStart_toStartOf="@+id/backgroundViewLeft"
@@ -149,16 +144,14 @@
     app:layout_constraintBottom_toBottomOf="@+id/backgroundViewLeft"
     app:layout_constraintEnd_toEndOf="@+id/singleArrowImage"
     app:layout_constraintStart_toStartOf="@+id/singleArrowImage"
-    app:layout_constraintTop_toTopOf="@+id/backgroundViewLeft"
-
-    />
+    app:layout_constraintTop_toTopOf="@+id/backgroundViewLeft" />
 
   <TextView
     android:id="@+id/textView2"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_weight="1"
-    android:text="MARS"
+    android:text="@string/mars"
     android:textColor="#fff"
     app:layout_constraintBaseline_toBaselineOf="@+id/textView6"
     app:layout_constraintEnd_toEndOf="@+id/backgroundViewRight"
@@ -169,7 +162,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginTop="8dp"
-    android:text="Sept 14 - 17"
+    android:text="@string/sept_14_17"
     app:layout_constraintEnd_toEndOf="@+id/originCityLabel"
     app:layout_constraintHorizontal_bias="0"
     app:layout_constraintStart_toStartOf="@+id/originCityLabel"
@@ -180,7 +173,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_weight="1"
-    android:text="1 Traveller"
+    android:text="@string/_1_traveller"
     app:layout_constraintBaseline_toBaselineOf="@+id/textView7"
     app:layout_constraintEnd_toEndOf="@+id/destinationCityLabel"
     app:layout_constraintStart_toStartOf="@+id/destinationCityLabel" />
@@ -196,7 +189,6 @@
     app:layout_constraintStart_toStartOf="@+id/trackLabel"
     app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
-
   <TextView
     android:id="@+id/trackLabel"
     android:layout_width="wrap_content"
@@ -204,7 +196,7 @@
     android:layout_marginStart="8dp"
     android:layout_marginTop="12dp"
     android:layout_marginEnd="8dp"
-    android:text="Track the staus of a Journey"
+    android:text="@string/track_the_staus_of_a_journey"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/singleArrowImage" />
@@ -219,9 +211,7 @@
     android:src="@drawable/galaxy"
     app:layout_constraintBottom_toBottomOf="@+id/exploreLabel"
     app:layout_constraintEnd_toStartOf="@+id/exploreLabel"
-    app:layout_constraintTop_toTopOf="@+id/exploreLabel"
-
-    />
+    app:layout_constraintTop_toTopOf="@+id/exploreLabel" />
 
   <TextView
     android:id="@+id/exploreLabel"
@@ -231,12 +221,11 @@
     android:layout_marginTop="40dp"
     android:layout_marginEnd="8dp"
     android:layout_marginBottom="8dp"
-    android:text="Explore the Universe"
+    android:text="@string/explore_the_universe"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/trackLabel" />
-
 
   <TextView
     android:id="@+id/originCityLabel"
@@ -244,7 +233,7 @@
     android:layout_height="35dp"
     android:layout_marginTop="8dp"
     android:layout_marginBottom="8dp"
-    android:text="Washington, D.C."
+    android:text="@string/washington_d_c"
     android:textAlignment="center"
     android:textColor="@color/colorAccent"
     app:layout_constraintBottom_toBottomOf="@+id/backgroundViewLeft"
@@ -256,7 +245,7 @@
     android:id="@+id/destinationCityLabel"
     android:layout_width="79dp"
     android:layout_height="36dp"
-    android:text="Mars Colonies"
+    android:text="@string/mars_colonies"
     android:textAlignment="center"
     android:textColor="@color/colorAccent"
     app:layout_constraintBaseline_toBaselineOf="@+id/originCityLabel"
