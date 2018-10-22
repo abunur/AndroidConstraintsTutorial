@@ -39,8 +39,8 @@ import kotlinx.android.synthetic.main.keyframe1.*
 
 class MainActivity : AppCompatActivity() {
 
-  val constraintSet1 = ConstraintSet()
-  val constraintSet2 = ConstraintSet()
+  private val constraintSet1 = ConstraintSet()
+  private val constraintSet2 = ConstraintSet()
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
