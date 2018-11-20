@@ -89,8 +89,7 @@
     android:layout_marginStart="16dp"
     android:background="@color/colorPrimary"
     tools:layout_editor_absoluteX="201dp"
-    tools:layout_editor_absoluteY="144dp"
-    />
+    tools:layout_editor_absoluteY="144dp" />
 
 
   <View
@@ -100,8 +99,7 @@
     android:layout_marginEnd="16dp"
     android:background="@color/colorPrimary"
     tools:layout_editor_absoluteX="57dp"
-    tools:layout_editor_absoluteY="144dp"
-    />
+    tools:layout_editor_absoluteY="144dp" />
 
   <TextView
     android:id="@+id/textView6"
@@ -175,11 +173,11 @@
     android:id="@+id/universeIcon"
     android:layout_width="55dp"
     android:layout_height="0dp"
-    app:layout_constraintDimensionRatio="16:9"
     android:layout_marginEnd="8dp"
     android:layout_weight="1"
     android:scaleType="fitCenter"
     android:src="@drawable/galaxy"
+    app:layout_constraintDimensionRatio="16:9"
     tools:layout_editor_absoluteX="32dp"
     tools:layout_editor_absoluteY="434dp" />
 
