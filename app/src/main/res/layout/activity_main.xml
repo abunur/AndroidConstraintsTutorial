@@ -172,10 +172,13 @@
     tools:layout_editor_absoluteY="379dp" />
 
   <ImageView
-    android:id="@+id/imageView9"
-    android:layout_width="0dp"
-    android:layout_height="wrap_content"
+    android:id="@+id/universeIcon"
+    android:layout_width="55dp"
+    android:layout_height="0dp"
+    app:layout_constraintDimensionRatio="16:9"
+    android:layout_marginEnd="8dp"
     android:layout_weight="1"
+    android:scaleType="fitCenter"
     android:src="@drawable/galaxy"
     tools:layout_editor_absoluteX="32dp"
     tools:layout_editor_absoluteY="434dp" />
@@ -189,18 +192,24 @@
 
 
   <TextView
-    android:id="@+id/textView15"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Washington, D.C."
+    android:id="@+id/originCityLabel"
+    android:layout_width="82dp"
+    android:layout_height="35dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:text="@string/washington_d_c"
+    android:textAlignment="center"
+    android:textColor="@color/colorAccent"
     tools:layout_editor_absoluteX="57dp"
     tools:layout_editor_absoluteY="180dp" />
 
   <TextView
-    android:id="@+id/textView16"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Mars Colony 2"
+    android:id="@+id/destinationCityLabel"
+    android:layout_width="79dp"
+    android:layout_height="36dp"
+    android:text="@string/mars_colonies"
+    android:textAlignment="center"
+    android:textColor="@color/colorAccent"
     tools:layout_editor_absoluteX="223dp"
     tools:layout_editor_absoluteY="180dp" />
 
