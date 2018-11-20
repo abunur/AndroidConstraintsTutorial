@@ -10,7 +10,7 @@
 
 
   <TextView
-    android:id="@+id/textView12"
+    android:id="@+id/spaceStationLabel"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="@string/space_stations"
@@ -19,16 +19,16 @@
 
 
   <ImageView
-    android:id="@+id/imageView2"
-    android:layout_width="41dp"
-    android:layout_height="33dp"
-    android:contentDescription="Space Stations"
-    app:srcCompat="@mipmap/space_station_icon"
+    android:id="@+id/spaceStationIcon"
+    android:layout_width="91dp"
+    android:layout_height="25dp"
+    android:layout_weight="1"
+    android:src="@drawable/space_station_icon"
     tools:layout_editor_absoluteX="60dp"
     tools:layout_editor_absoluteY="16dp" />
 
   <TextView
-    android:id="@+id/textView13"
+    android:id="@+id/flightsLabel"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="@string/flights"
@@ -36,16 +36,16 @@
     tools:layout_editor_absoluteY="58dp" />
 
   <ImageView
-    android:id="@+id/imageView3"
-    android:layout_width="40dp"
-    android:layout_height="35dp"
-    android:contentDescription="Flights"
-    app:srcCompat="@mipmap/rocket_icon"
+    android:id="@+id/flightsIcon"
+    android:layout_width="31dp"
+    android:layout_height="33dp"
+    android:layout_weight="1"
+    android:src="@drawable/rocket_icon"
     tools:layout_editor_absoluteX="172dp"
     tools:layout_editor_absoluteY="16dp" />
 
   <TextView
-    android:id="@+id/textView14"
+    android:id="@+id/roverLabel"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="@string/rovers"
@@ -53,19 +53,21 @@
     tools:layout_editor_absoluteY="58dp" />
 
   <ImageView
-    android:id="@+id/imageView4"
-    android:layout_width="38dp"
-    android:layout_height="36dp"
-    android:contentDescription="Rovers"
-    app:srcCompat="@mipmap/rover_icon"
+    android:id="@+id/roverIcon"
+    android:layout_width="35dp"
+    android:layout_height="29dp"
+    android:layout_weight="1"
+    android:src="@drawable/rover_icon"
     tools:layout_editor_absoluteX="274dp"
     tools:layout_editor_absoluteY="16dp" />
 
 
   <TextView
-    android:id="@+id/textView17"
+    android:id="@+id/roundTripLabel"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
     android:text="@string/round_trip"
     tools:layout_editor_absoluteX="112dp"
     tools:layout_editor_absoluteY="101dp" />
@@ -84,7 +86,8 @@
     android:id="@+id/backgroundViewRight"
     android:layout_width="124dp"
     android:layout_height="98dp"
-    android:background="#f00"
+    android:layout_marginStart="16dp"
+    android:background="@color/colorPrimary"
     tools:layout_editor_absoluteX="201dp"
     tools:layout_editor_absoluteY="144dp"
     />
@@ -94,7 +97,8 @@
     android:id="@+id/backgroundViewLeft"
     android:layout_width="124dp"
     android:layout_height="98dp"
-    android:background="#f00"
+    android:layout_marginEnd="16dp"
+    android:background="@color/colorPrimary"
     tools:layout_editor_absoluteX="57dp"
     tools:layout_editor_absoluteY="144dp"
     />
@@ -102,16 +106,17 @@
   <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="DCA"
+    android:text="@string/dca"
     tools:layout_editor_absoluteX="101dp"
     tools:layout_editor_absoluteY="153dp" />
 
   <ImageView
-    android:id="@+id/imageView6"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:id="@+id/doubleArrowsImage"
+    android:layout_width="75dp"
+    android:layout_height="75dp"
     android:layout_weight="1"
-    app:srcCompat="@mipmap/double_arrows"
+    android:scaleType="fitCenter"
+    android:src="@drawable/double_arrows"
     tools:layout_editor_absoluteX="166dp"
     tools:layout_editor_absoluteY="161dp" />
 
@@ -120,32 +125,33 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_weight="1"
-    android:text="MARS"
+    android:text="@string/mars"
     tools:layout_editor_absoluteX="246dp"
     tools:layout_editor_absoluteY="153dp" />
 
   <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Sept 14 - 17"
+    android:text="@string/sept_14_17"
     tools:layout_editor_absoluteX="74dp"
     tools:layout_editor_absoluteY="256dp" />
 
   <TextView
     android:id="@+id/textView3"
-    android:layout_width="wrap_content"
+    android:layout_width="0dp"
     android:layout_height="wrap_content"
     android:layout_weight="1"
-    android:text="1 Traveller"
+    android:text="@string/_1_traveller"
     tools:layout_editor_absoluteX="232dp"
     tools:layout_editor_absoluteY="256dp" />
 
   <ImageView
-    android:id="@+id/imageView5"
+    android:id="@+id/singleArrowImage"
     android:layout_width="93dp"
     android:layout_height="79dp"
     android:layout_weight="1"
-    app:srcCompat="@mipmap/single_arrow"
+    android:scaleType="fitCenter"
+    android:src="@drawable/single_arrow"
     tools:layout_editor_absoluteX="146dp"
     tools:layout_editor_absoluteY="275dp" />
 
@@ -153,23 +159,23 @@
   <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Track the staus of a Journey"
+    android:text="@string/track_journey"
     tools:layout_editor_absoluteX="134dp"
     tools:layout_editor_absoluteY="379dp" />
 
   <ImageView
     android:id="@+id/imageView9"
-    android:layout_width="55dp"
-    android:layout_height="46dp"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
     android:layout_weight="1"
-    app:srcCompat="@mipmap/galaxy"
+    android:src="@drawable/galaxy"
     tools:layout_editor_absoluteX="32dp"
     tools:layout_editor_absoluteY="434dp" />
 
   <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Explore the Universe"
+    android:text="@string/explore_the_universe"
     tools:layout_editor_absoluteX="146dp"
     tools:layout_editor_absoluteY="444dp" />
 
@@ -192,10 +198,10 @@
 
   <ImageView
     android:id="@+id/imageView7"
-    android:layout_width="89dp"
-    android:layout_height="50dp"
+    android:layout_width="0dp"
+    android:layout_height="33dp"
     android:layout_weight="1"
-    app:srcCompat="@mipmap/track_icon"
+    android:src="@drawable/track_icon"
     tools:layout_editor_absoluteX="16dp"
     tools:layout_editor_absoluteY="364dp" />
 
