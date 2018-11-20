@@ -219,8 +219,8 @@
     android:layout_height="33dp"
     android:layout_weight="1"
     android:src="@drawable/track_icon"
-    tools:layout_editor_absoluteX="16dp"
-    tools:layout_editor_absoluteY="364dp" />
+    tools:layout_editor_absoluteX="146dp"
+    tools:layout_editor_absoluteY="401dp" />
 
 
 </android.support.constraint.ConstraintLayout>
