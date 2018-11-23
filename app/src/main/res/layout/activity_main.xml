@@ -13,10 +13,11 @@
     android:id="@+id/spaceStationLabel"
     android:layout_width="wrap_content"
     android:layout_height="15dp"
-    android:layout_marginStart="10dp"
+    android:layout_marginStart="15dp"
     android:text="@string/space_stations"
-    app:layout_constraintStart_toStartOf="parent"
-    tools:layout_editor_absoluteY="61dp" />
+    app:layout_constraintBaseline_toBaselineOf="@+id/flightsLabel"
+    app:layout_constraintEnd_toEndOf="@+id/spaceStationIcon"
+    app:layout_constraintStart_toStartOf="parent" />
 
 
   <ImageView
@@ -25,20 +26,18 @@
     android:layout_height="25dp"
     android:layout_weight="1"
     android:src="@drawable/space_station_icon"
-    app:layout_constraintEnd_toEndOf="@+id/spaceStationLabel"
-    app:layout_constraintStart_toStartOf="@+id/spaceStationLabel"
-    tools:layout_editor_absoluteY="17dp" />
+    tools:layout_editor_absoluteX="14dp"
+    tools:layout_editor_absoluteY="18dp" />
 
   <TextView
     android:id="@+id/flightsLabel"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginTop="10dp"
+    android:layout_marginTop="15dp"
     android:text="@string/flights"
-    app:layout_constraintBottom_toBottomOf="@+id/spaceStationLabel"
     app:layout_constraintEnd_toEndOf="@+id/flightsIcon"
     app:layout_constraintStart_toStartOf="@+id/flightsIcon"
-    app:layout_constraintTop_toTopOf="@+id/spaceStationLabel" />
+    app:layout_constraintTop_toBottomOf="@+id/flightsIcon" />
 
   <ImageView
     android:id="@+id/flightsIcon"
@@ -49,17 +48,18 @@
     android:src="@drawable/rocket_icon"
     app:layout_constraintBottom_toBottomOf="@+id/spaceStationIcon"
     app:layout_constraintTop_toTopOf="@+id/spaceStationIcon"
-    tools:layout_editor_absoluteX="174dp" />
+    app:layout_constraintVertical_bias="0.0"
+    tools:layout_editor_absoluteX="170dp" />
 
   <TextView
     android:id="@+id/roverLabel"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginEnd="10dp"
+    android:layout_marginEnd="15dp"
     android:text="@string/rovers"
-    app:layout_constraintBottom_toBottomOf="@+id/flightsLabel"
+    app:layout_constraintBaseline_toBaselineOf="@+id/flightsLabel"
     app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintTop_toTopOf="@+id/flightsLabel" />
+    app:layout_constraintStart_toStartOf="@+id/roverIcon" />
 
   <ImageView
     android:id="@+id/roverIcon"
@@ -68,17 +68,14 @@
     android:layout_weight="1"
     android:src="@drawable/rover_icon"
     app:layout_constraintBottom_toBottomOf="@+id/flightsIcon"
-    app:layout_constraintEnd_toEndOf="@+id/roverLabel"
-    app:layout_constraintStart_toStartOf="@+id/roverLabel"
-    app:layout_constraintTop_toTopOf="@+id/flightsIcon" />
+    app:layout_constraintTop_toTopOf="@+id/flightsIcon"
+    tools:layout_editor_absoluteX="332dp" />
 
 
   <TextView
     android:id="@+id/roundTripLabel"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginTop="8dp"
-    android:layout_marginBottom="8dp"
     android:text="@string/round_trip"
     tools:layout_editor_absoluteX="112dp"
     tools:layout_editor_absoluteY="101dp" />
@@ -97,7 +94,6 @@
     android:id="@+id/backgroundViewRight"
     android:layout_width="124dp"
     android:layout_height="98dp"
-    android:layout_marginStart="16dp"
     android:background="@color/colorPrimary"
     tools:layout_editor_absoluteX="201dp"
     tools:layout_editor_absoluteY="144dp" />
@@ -107,7 +103,6 @@
     android:id="@+id/backgroundViewLeft"
     android:layout_width="124dp"
     android:layout_height="98dp"
-    android:layout_marginEnd="16dp"
     android:background="@color/colorPrimary"
     tools:layout_editor_absoluteX="57dp"
     tools:layout_editor_absoluteY="144dp" />
@@ -116,7 +111,6 @@
     android:id="@+id/textView6"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginTop="8dp"
     android:text="@string/dca"
     android:textColor="#fff"
     tools:layout_editor_absoluteX="101dp"
@@ -173,9 +167,6 @@
     android:id="@+id/trackLabel"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginStart="8dp"
-    android:layout_marginTop="12dp"
-    android:layout_marginEnd="8dp"
     android:text="@string/track_the_staus_of_a_journey"
     tools:layout_editor_absoluteX="134dp"
     tools:layout_editor_absoluteY="379dp" />
@@ -184,11 +175,9 @@
     android:id="@+id/universeIcon"
     android:layout_width="55dp"
     android:layout_height="0dp"
-    android:layout_marginEnd="8dp"
     android:layout_weight="1"
     android:scaleType="fitCenter"
     android:src="@drawable/galaxy"
-    app:layout_constraintDimensionRatio="16:9"
     tools:layout_editor_absoluteX="32dp"
     tools:layout_editor_absoluteY="434dp" />
 
@@ -204,8 +193,6 @@
     android:id="@+id/originCityLabel"
     android:layout_width="82dp"
     android:layout_height="35dp"
-    android:layout_marginTop="8dp"
-    android:layout_marginBottom="8dp"
     android:text="@string/washington_d_c"
     android:textAlignment="center"
     android:textColor="@color/colorAccent"
