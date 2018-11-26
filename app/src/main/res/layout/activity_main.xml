@@ -13,7 +13,7 @@
     android:id="@+id/spaceStationLabel"
     android:layout_width="wrap_content"
     android:layout_height="15dp"
-    android:layout_marginStart="8dp"
+    android:layout_marginStart="15dp"
     android:text="@string/space_stations"
     app:layout_constraintBaseline_toBaselineOf="@+id/flightsLabel"
     app:layout_constraintEnd_toStartOf="@+id/flightsLabel"
@@ -62,7 +62,7 @@
     android:id="@+id/roverLabel"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginEnd="8dp"
+    android:layout_marginEnd="15dp"
     android:text="@string/rovers"
     app:layout_constraintBaseline_toBaselineOf="@+id/flightsLabel"
     app:layout_constraintEnd_toEndOf="parent"
@@ -86,10 +86,10 @@
     android:id="@+id/roundTripLabel"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginTop="8dp"
+    android:layout_marginTop="10dp"
     android:text="@string/round_trip"
-    app:layout_constraintTop_toTopOf="@+id/guideline"
-    tools:layout_editor_absoluteX="164dp" />
+    app:layout_constraintTop_toBottomOf="@+id/flightsLabel"
+    tools:layout_editor_absoluteX="178dp" />
 
   <Switch
     android:id="@+id/switch1"
@@ -236,7 +236,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    app:layout_constraintGuide_begin="100dp" />
+    app:layout_constraintGuide_begin="255dp" />
 
 
 </android.support.constraint.ConstraintLayout>
