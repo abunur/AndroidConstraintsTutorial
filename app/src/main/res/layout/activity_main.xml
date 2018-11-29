@@ -15,8 +15,8 @@
     android:layout_height="15dp"
     android:layout_marginStart="15dp"
     android:text="@string/space_stations"
-    app:layout_constraintStart_toStartOf="parent"
-    tools:layout_editor_absoluteY="63dp" />
+    app:layout_constraintBaseline_toBaselineOf="@+id/flightsLabel"
+    app:layout_constraintStart_toStartOf="parent" />
 
 
   <ImageView
@@ -24,7 +24,6 @@
     android:layout_width="91dp"
     android:layout_height="25dp"
 
-    android:layout_marginBottom="8dp"
     android:layout_weight="1"
     android:src="@drawable/space_station_icon"
     app:layout_constraintBottom_toBottomOf="@+id/flightsIcon"
@@ -37,12 +36,10 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
 
-    android:layout_marginStart="8dp"
-    android:layout_marginEnd="8dp"
+    android:layout_marginTop="15dp"
     android:text="@string/flights"
-    app:layout_constraintBaseline_toBaselineOf="@+id/spaceStationLabel"
-    app:layout_constraintEnd_toStartOf="@+id/roverLabel"
-    app:layout_constraintStart_toEndOf="@+id/spaceStationLabel" />
+    app:layout_constraintTop_toBottomOf="@+id/flightsIcon"
+    tools:layout_editor_absoluteX="190dp" />
 
   <ImageView
     android:id="@+id/flightsIcon"
@@ -61,11 +58,10 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
 
-    android:layout_marginEnd="8dp"
+    android:layout_marginEnd="15dp"
     android:text="@string/rovers"
     app:layout_constraintBaseline_toBaselineOf="@+id/flightsLabel"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="@+id/roverIcon" />
+    app:layout_constraintEnd_toEndOf="parent" />
 
   <ImageView
     android:id="@+id/roverIcon"
@@ -73,10 +69,12 @@
     android:layout_height="29dp"
 
     android:layout_weight="1"
+
     android:src="@drawable/rover_icon"
-    app:layout_constraintBaseline_toBaselineOf="@+id/flightsLabel"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toEndOf="@+id/flightsLabel" />
+    app:layout_constraintBottom_toBottomOf="@+id/flightsIcon"
+    app:layout_constraintEnd_toEndOf="@+id/roverLabel"
+    app:layout_constraintStart_toStartOf="@+id/roverLabel"
+    app:layout_constraintTop_toTopOf="@+id/flightsIcon" />
 
 
   <TextView
