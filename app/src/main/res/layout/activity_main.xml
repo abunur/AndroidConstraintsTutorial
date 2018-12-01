@@ -170,9 +170,9 @@
     android:layout_marginEnd="8dp"
     android:layout_weight="1"
     android:text="@string/_1_traveller"
+    app:layout_constraintBaseline_toBaselineOf="@+id/textView4"
     app:layout_constraintEnd_toEndOf="@+id/destinationCityLabel"
-    app:layout_constraintStart_toStartOf="@+id/destinationCityLabel"
-    tools:layout_editor_absoluteY="256dp" />
+    app:layout_constraintStart_toStartOf="@+id/destinationCityLabel" />
 
   <ImageView
     android:id="@+id/singleArrowImage"
