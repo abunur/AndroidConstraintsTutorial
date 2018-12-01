@@ -76,10 +76,11 @@
     android:id="@+id/roundTripLabel"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginTop="15dp"
+    android:layout_marginTop="30dp"
     android:text="@string/round_trip"
-    app:layout_constraintTop_toBottomOf="@+id/flightsLabel"
-    tools:layout_editor_absoluteX="178dp" />
+    app:layout_constraintEnd_toEndOf="@+id/doubleArrowsImage"
+    app:layout_constraintStart_toStartOf="@+id/doubleArrowsImage"
+    app:layout_constraintTop_toTopOf="@+id/flightsLabel" />
 
   <Switch
     android:id="@+id/switch1"
@@ -228,5 +229,18 @@
     android:orientation="horizontal"
     app:layout_constraintGuide_begin="255dp" />
 
+  <android.support.constraint.Guideline
+    android:id="@+id/guideline2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_end="516dp" />
+
+  <android.support.constraint.Guideline
+    android:id="@+id/guideline3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintGuide_percent="0.50" />
 
 </android.support.constraint.ConstraintLayout>
