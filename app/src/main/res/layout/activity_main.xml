@@ -249,13 +249,16 @@
     app:layout_constraintStart_toStartOf="@+id/textView2" />
 
   <ImageView
-    android:id="@+id/imageView7"
-    android:layout_width="0dp"
-    android:layout_height="33dp"
+    android:id="@+id/trackIcon"
+    android:layout_width="89dp"
+    android:layout_height="50dp"
+    android:layout_marginEnd="8dp"
     android:layout_weight="1"
+    android:scaleType="fitCenter"
     android:src="@drawable/track_icon"
-    tools:layout_editor_absoluteX="146dp"
-    tools:layout_editor_absoluteY="401dp" />
+    app:layout_constraintCircle="@id/singleArrowImage"
+    app:layout_constraintCircleRadius="100dp"
+    app:layout_constraintCircleAngle="180" />
 
   <android.support.constraint.Guideline
     android:id="@+id/guideline"
