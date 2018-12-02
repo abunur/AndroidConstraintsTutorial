@@ -31,17 +31,31 @@
 package com.raywenderlich.android.razegalactic
 
 import android.os.Bundle
+import android.support.constraint.ConstraintSet
 import android.support.v7.app.AppCompatActivity
+import android.transition.TransitionManager
+import kotlinx.android.synthetic.main.keyframe1.*
 
 /**
  * Main Screen
  */
 class MainActivity : AppCompatActivity() {
 
+  private val constraintSet1 = ConstraintSet()
+  private val constraintSet2 = ConstraintSet()
+
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
-    setContentView(R.layout.activity_main)
+    setContentView(R.layout.keyframe1)
 
-    // Your code
+    constraintSet1.clone(constraintLayout) //1
+    constraintSet2.clone(this, R.layout.activity_main) //2
+
+    switch1.setOnCheckedChangeListener { _, isChecked -> //3
+      //apply the transition
+      TransitionManager.beginDelayedTransition(constraintLayout) //4
+      val constraint = if (!isChecked) constraintSet1 else constraintSet2
+      constraint.applyTo(constraintLayout) //5
+    }
   }
 }
