@@ -203,7 +203,7 @@
   <ImageView
     android:id="@+id/universeIcon"
     android:layout_width="55dp"
-    android:layout_height="0dp"
+    android:layout_height="46dp"
     android:layout_marginEnd="8dp"
     android:layout_weight="1"
     android:scaleType="fitCenter"
