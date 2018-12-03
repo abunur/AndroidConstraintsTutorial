@@ -33,6 +33,7 @@ package com.raywenderlich.android.razegalactic
 import android.os.Bundle
 import android.support.constraint.ConstraintSet
 import android.support.v7.app.AppCompatActivity
+import android.transition.AutoTransition
 import android.transition.TransitionManager
 import kotlinx.android.synthetic.main.keyframe1.*
 
@@ -57,5 +58,18 @@ class MainActivity : AppCompatActivity() {
       val constraint = if (!isChecked) constraintSet1 else constraintSet2
       constraint.applyTo(constraintLayout) //5
     }
+  }
+
+  override fun onEnterAnimationComplete() { //1
+    super.onEnterAnimationComplete()
+
+    constraintSet2.clone(this, R.layout.activity_main) //2
+
+    //apply the transition
+    val transition = AutoTransition() //3
+    transition.duration = 1000 //4
+    TransitionManager.beginDelayedTransition(constraintLayout, transition) //5
+
+    constraintSet2.applyTo(constraintLayout) //6
   }
 }
