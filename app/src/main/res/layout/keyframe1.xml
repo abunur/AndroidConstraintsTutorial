@@ -259,8 +259,8 @@
     android:scaleType="fitCenter"
     android:src="@drawable/track_icon"
     app:layout_constraintCircle="@id/singleArrowImage"
-    app:layout_constraintCircleRadius="100dp"
-    app:layout_constraintCircleAngle="180" />
+    app:layout_constraintCircleRadius="200dp"
+    app:layout_constraintCircleAngle="275" />
 
   <android.support.constraint.Guideline
     android:id="@+id/guideline"
