@@ -52,6 +52,8 @@ class MainActivity : AppCompatActivity() {
     constraintSet1.clone(constraintLayout) //1
     constraintSet2.clone(this, R.layout.activity_main) //2
 
+    switch1.isChecked = true
+
     switch1.setOnCheckedChangeListener { _, isChecked -> //3
       //apply the transition
       TransitionManager.beginDelayedTransition(constraintLayout) //4
